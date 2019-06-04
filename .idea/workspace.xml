@@ -2,11 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2-image/eureka-server-7001-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-image/eureka-client-8001-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/EurekaClient8001Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/dao/DeptDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-8001/src/test/java/cn/zsk/client8001/EurekaClient8001ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/target/classes/cn/zsk/entity/DeptEntity.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,6 +34,7 @@
     <ignored path="$PROJECT_DIR$/eureka-7001/target/" />
     <ignored path="$PROJECT_DIR$/eureka-test/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server-7001/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-client-8001/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +46,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/EurekaClient8001Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="627">
-                <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="166">
+                <caret line="85" column="3" lean-forward="true" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -43,28 +82,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-server-7001/src/main/java/cn/zsk/eureka7001/Eureka7001Application.java">
+        <entry file="file://$PROJECT_DIR$/eureka-client-8001/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="116" column="32" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-server-7001/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="21" selection-start-line="20" selection-start-column="7" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="408">
+              <caret line="45" column="21" selection-start-line="37" selection-start-column="7" selection-end-line="45" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -121,6 +142,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/provider-dept-8001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/eureka-7001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/DeptService.java" />
+        <option value="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/impl/DeptServiceImpl.java" />
+        <option value="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java" />
+        <option value="$PROJECT_DIR$/eureka-client-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/EurekaClient8001Application.java" />
+        <option value="$PROJECT_DIR$/eureka-client-8001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -137,6 +164,15 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="eureka-client-8001" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="eureka-client-8001" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="SpringCloudDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
@@ -144,9 +180,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="251" />
-    <option name="y" value="57" />
-    <option name="width" value="1638" />
+    <option name="x" value="41" />
+    <option name="y" value="64" />
+    <option name="width" value="1449" />
     <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -163,6 +199,126 @@
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client8001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client8001" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client8001" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client8001" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client8001" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client8001" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-client-8001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -178,7 +334,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer-dept-8002" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/eureka-client-8001/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -188,11 +344,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\eureka-client-8001\src\main\resources" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\eureka-client-8001\src\main\java\cn\zsk\client8001" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\resources" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\consumer-dept-80\src\main\resources" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\provider-dept-8001\src\main\resources" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java\entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="config" />
@@ -215,41 +371,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Eureka7001Application">
-    <configuration name="CommonApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="common-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="CommonApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommonApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="common-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.zsk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.CommonApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="common-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.entity.CommonApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerDept80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="consumer-dept-8002" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.consumer8002.ConsumerDept80Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.EurekaClient8001Application">
     <configuration name="Eureka7001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server-7001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.eureka7001.Eureka7001Application" />
@@ -257,27 +379,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="eureka-test" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.eurekatest.EurekaTestApplication" />
+    <configuration name="EurekaClient8001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-client-8001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.client8001.EurekaClient8001Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProviderDept8001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="provider-dept-8001" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.provider8001.ProviderDept8001Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.CommonApplication (1)" />
-        <item itemvalue="Spring Boot.CommonApplication" />
-        <item itemvalue="Spring Boot.CommonApiApplication" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Spring Boot.Eureka7001Application" />
+      <item itemvalue="Spring Boot.EurekaClient8001Application" />
+    </list>
   </component>
   <component name="SpringGeneralSettings">
     <option name="allowAutoConfigurationMode" value="true" />
@@ -296,7 +408,7 @@
       <workItem from="1559528088125" duration="24453000" />
       <workItem from="1559557650532" duration="1484000" />
       <workItem from="1559612453978" duration="2454000" />
-      <workItem from="1559616224835" duration="6156000" />
+      <workItem from="1559616224835" duration="10942000" />
     </task>
     <task id="LOCAL-00001" summary="first commit&#10;Framework to build system">
       <created>1558927930801</created>
@@ -333,14 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559614602420</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新Remark.md">
+      <created>1559627742214</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559627742214</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37570000" />
+    <option name="totallyTimeSpent" value="42356000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="251" y="57" width="1638" height="982" extended-state="0" />
+    <frame x="41" y="64" width="1449" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -350,10 +469,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.25602028" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.29085672" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33008525" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33008525" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -430,7 +549,8 @@
     <MESSAGE value="1.再次规整pom文件，在父pom文件中集中管理版本信息&#10;2.增加eureka-server模块" />
     <MESSAGE value="1.修改项目启动容器为：undertow" />
     <MESSAGE value="1.修改配置文件编码格式为UTF-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.修改配置文件编码格式为UTF-8" />
+    <MESSAGE value="更新Remark.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新Remark.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -557,24 +677,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider-dept-8001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -589,20 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="116" column="32" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server-7001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" selection-start-line="20" selection-start-column="7" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-server-7001/src/main/java/cn/zsk/eureka7001/Eureka7001Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -610,11 +702,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server-7001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="103" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="36" column="21" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/dao/DeptDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/impl/DeptServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/DeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/config/MybatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="45" column="21" selection-start-line="37" selection-start-column="7" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server-7001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/EurekaClient8001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="627">
-            <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="166">
+            <caret line="85" column="3" lean-forward="true" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
