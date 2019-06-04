@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-db/springclouddemo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/entity/DeptEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/classes/cn/zsk/entity/DeptEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/common-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/src/main/java/cn/zsk/consumer8002/ConsumerDept80Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/src/main/java/cn/zsk/consumer8002/config/ConfigBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/src/main/java/cn/zsk/consumer8002/controller/Consumer_DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-dept-8002/src/test/java/cn/zsk/consumer8002/ConsumerDept80ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/Remark.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/src/main/java/cn/zsk/eureka7001/Eureka7001Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-7001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/ProviderDept8001Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/controller/DpetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/dao/DeptDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/resources/mapper/DeptDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-dept-8001/src/test/java/cn/zsk/provider8001/ProviderDept8001ApplicationTests.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/common-api/target/" />
+    <ignored path="$PROJECT_DIR$/provider-dept-8001/target/" />
+    <ignored path="$PROJECT_DIR$/consumer-dept-80/target/" />
+    <ignored path="$PROJECT_DIR$/consumer-dept-8002/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-7001/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-test/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>common-api</find>
+      <find>druid.version</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/common-api/src/main/java/entity/DeptEntity.java" />
+        <option value="$PROJECT_DIR$/common-api/src/main/java/CommonApplication.java" />
+        <option value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/entity/CommonApplication.java" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/test.java" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/dao/DeptDao.java" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/config/MybatisConfig.java" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/resources/mapper/DeptDao.xml" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/controller/DpetController.java" />
+        <option value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/entity/DeptEntity.java" />
+        <option value="$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/config/ConfigBean.java" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/DeptService.java" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/impl/DeptServiceImpl.java" />
+        <option value="$PROJECT_DIR$/common-api/src/main/java/config/MybatisConfig.java" />
+        <option value="$PROJECT_DIR$/common-api/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/ConsumerDept80Application.java" />
+        <option value="$PROJECT_DIR$/consumer-dept-80/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-dept-80/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/controller/Consumer_DeptController.java" />
+        <option value="$PROJECT_DIR$/consumer-dept-8002/src/main/java/cn/zsk/consumer8002/ConsumerDept80Application.java" />
+        <option value="$PROJECT_DIR$/eureka-test/src/main/java/cn/zsk/eurekatest/EurekaTestApplication.java" />
+        <option value="$PROJECT_DIR$/eureka-7001/src/main/java/cn/zsk/eureka7001/Eureka7001Application.java" />
+        <option value="$PROJECT_DIR$/eureka-7001/Remark.md" />
+        <option value="$PROJECT_DIR$/eureka-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/common-api/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-dept-8002/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/eureka-7001/src/main/resources/application.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SpringCloudDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="32" />
+    <option name="y" value="24" />
+    <option name="width" value="1638" />
+    <option name="height" value="982" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-7001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka7001" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer-dept-8002" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\1-db" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="config" />
+      <recent name="cn.zsk.provider8001.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\resources" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\consumer-dept-80\src\main\resources" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\provider-dept-8001\src\main\resources" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java\entity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProviderDept8001Application">
+    <configuration name="CommonApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="common-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="CommonApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="common-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.zsk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.CommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="common-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.entity.CommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerDept80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="consumer-dept-8002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.consumer8002.ConsumerDept80Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Eureka7001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server-7001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.eureka7001.Eureka7001Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.eurekatest.EurekaTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderDept8001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="provider-dept-8001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.provider8001.ProviderDept8001Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CommonApplication (1)" />
+        <item itemvalue="Spring Boot.CommonApplication" />
+        <item itemvalue="Spring Boot.CommonApiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration useDefault="false">C:\Users\user\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="" />
+      <created>1558924876419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558924876419</updated>
+      <workItem from="1558924880037" duration="3023000" />
+      <workItem from="1559528088125" duration="24453000" />
+      <workItem from="1559557650532" duration="1484000" />
+      <workItem from="1559612453978" duration="2454000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit&#10;Framework to build system">
+      <created>1558927930801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558927930801</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.删除多余jar包，规整jar包&#10;2.增加两个模块（目前这两个模块并没有用到springcloud，为以后开发做基础）&#10;3.增加数据库文件">
+      <created>1559545309398</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559545309398</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.再次规整pom文件，在父pom文件中集中管理版本信息&#10;2.增加eureka-server模块">
+      <created>1559558276606</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559558276606</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.修改项目启动容器为：undertow">
+      <created>1559613968550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559613968550</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.修改配置文件编码格式为UTF-8">
+      <created>1559614602420</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559614602420</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31414000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="32" y="24" width="1638" height="982" extended-state="0" />
+    <layout>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.25285172" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33008525" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32886723" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32886723" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32886723" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="15" />
+      <window_info anchor="bottom" id="Tail" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.28707224" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="first commit&#10;Framework to build system" />
+    <MESSAGE value="1.删除多余jar包，规整jar包&#10;2.增加两个模块（目前这两个模块并没有用到springcloud，为以后开发做基础）&#10;3.增加数据库文件" />
+    <MESSAGE value="1.再次规整pom文件，在父pom文件中集中管理版本信息&#10;2.增加eureka-server模块" />
+    <MESSAGE value="1.修改项目启动容器为：undertow" />
+    <MESSAGE value="1.修改配置文件编码格式为UTF-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.修改配置文件编码格式为UTF-8" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/controller/Consumer_DeptController.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/cn/zsk/CommonApplication.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/test.java" />
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/resources/mapper/DeptDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/dao/DeptDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/config/ConfigBean.java" />
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/impl/DeptServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/config/MybatisConfig.java" />
+    <entry file="file://$PROJECT_DIR$/consumer-dept-80/src/main/resources/application-dev.yml" />
+    <entry file="file://$PROJECT_DIR$/consumer-dept-80/src/test/java/cn/zsk/consumerdept80/ConsumerDept80ApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/DeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-api/src/main/resources/application-dev.yml" />
+    <entry file="file://$PROJECT_DIR$/consumer-dept-80/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/consumer-dept-80/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/ConsumerDept80Application.java" />
+    <entry file="file://$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/controller/Consumer_DeptController.java" />
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/config/MybatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-test/src/main/java/cn/zsk/eurekatest/EurekaTestApplication.java" />
+    <entry file="file://$PROJECT_DIR$/consumer-dept-8002/src/main/java/cn/zsk/consumer8002/controller/Consumer_DeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-test/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/eureka-7001/src/test/java/cn/zsk/eureka7001/Eureka7001ApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/cn/zsk/entity/DeptEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/controller/DpetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-dept-8002/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-7001/Remark.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-dept-8002/src/main/java/cn/zsk/consumer8002/ConsumerDept80Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-7001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-7001/src/main/java/cn/zsk/eureka7001/Eureka7001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/ProviderDept8001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1161">
+          <caret line="185" column="23" lean-forward="true" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-api/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-7001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-dept-8002/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>eureka-server-7001</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
