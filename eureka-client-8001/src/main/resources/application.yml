@@ -34,3 +34,12 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: eureka-8001 #可以给本服务起别名
+    prefer-ip-address: true #访问路径可以显示ip地址
+
+info:
+  app.name: SpringCloudDemo~~~eureka-client-8001
+  company.name: zsk
+  bulid.artifactId: $project.artifactId$
+  bulid.version: $project.version$
