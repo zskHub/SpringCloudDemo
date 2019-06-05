@@ -33,7 +33,8 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka
+#      defaultZone: http://localhost:7001/eureka #单个服务注册中心
+       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #集群服务注册中心
   instance:
     instance-id: eureka-8001 #可以给本服务起别名
     prefer-ip-address: true #访问路径可以显示ip地址

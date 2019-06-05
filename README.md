@@ -7,8 +7,9 @@ Simple study notes for springcloud
     --- 2-image ：存放图片文件
     --- common-api ：公共模块
     --- consumer-dept-8002 ：基础例子，没有使用组件
-    --- provider-dept-8001 ：基础例子没有使用组件
-    --- eureka-server-7001 ：eureka服务端
+    --- provider-dept-8001 ：基础例子，没有使用组件
+    --- eureka-server-7001 ：eureka服务注册中心
+    --- eureka-client-8001 ：eureka服务注册
 ## 2 目录说明 ##
 - ***因为牵涉到消费者，服务者等相关内容，每次测试可能会牵涉多个模块，这里分组介绍***。
 ### 2.1 公共模块 ###
@@ -170,3 +171,37 @@ eureka:
 ##### f.eureka自我保护 #####
     总结：某个时刻某一个微服务不可用了，eureka不会立刻清理，依旧会对该微服务信息进行保存。
     手动禁止(不推荐)：eureka.server.enable-self-preservation: false
+
+***目前有的疑问：服务注册中心有了，服务注册有了（服务提供方），服务消费方怎么消费？服务提供方怎么控制服务的暴露（dubbo可以控制具体哪些方法暴露）？***
+
+### 2.4 eureka服务注册中心集群 ###
+* 使用的模块有：eureka-server-7001 ，eureka-server-7002，eureka-server-7003
+  同时为了测试方便在本机的hosts文件修改了ip映射：
+  添加了：
+  ```
+  127.0.0.1 eureka7001.com  
+  127.0.0.1 eureka7002.com  
+  127.0.0.1 eureka7003.com  
+  ```
+*
+1. 修改各个模块的yml文件，以7001为例,其他的类比，port，hostname，和defaultZone需要修改：
+```
+#集群
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: eureka7001.com #erueka服务端的实例名称
+  client:
+    register-with-eureka: false #false表示不向注册中心注册自己
+    fetch-registry: false #false表示自己端就是注册中心，我的职责是维护服务实例，不需要去检索服务
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+```
+2. 7001和7002和7003，主启动类的注解和7001一样
+3. 修改eureka-client-8001模块的yml
+```
+defaultZone: http://erureka7001.com:7001/eureka/,http://erureka7001.com:7002/eureka/,http://erureka7001.com:7003/eureka/  #集群服务注册中心
+```
+4. 运行结果
+<img src="2-image/eureka-server-more-1.png" width = "800" height = "300" align=center />

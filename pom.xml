@@ -21,6 +21,8 @@
         <module>consumer-dept-8002</module>
         <module>provider-dept-8001</module>
         <module>eureka-server-7001</module>
+        <module>eureka-server-7002</module>
+        <module>eureka-server-7003</module>
     </modules>
     <properties>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
