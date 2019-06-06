@@ -2,9 +2,9 @@ server:
   port: 7003
 eureka:
   instance:
-    hostname: eureka7003.com #erueka·şÎñ¶ËµÄÊµÀıÃû³Æ
+    hostname: eureka7003.com #eruekaæœåŠ¡ç«¯çš„å®ä¾‹åç§°
   client:
-    register-with-eureka: false #false±íÊ¾²»Ïò×¢²áÖĞĞÄ×¢²á×Ô¼º
-    fetch-registry: false #false±íÊ¾×Ô¼º¶Ë¾ÍÊÇ×¢²áÖĞĞÄ£¬ÎÒµÄÖ°ÔğÊÇÎ¬»¤·şÎñÊµÀı£¬²»ĞèÒªÈ¥¼ìË÷·şÎñ
+    register-with-eureka: false #falseè¡¨ç¤ºä¸å‘æ³¨å†Œä¸­å¿ƒæ³¨å†Œè‡ªå·±
+    fetch-registry: false #falseè¡¨ç¤ºè‡ªå·±ç«¯å°±æ˜¯æ³¨å†Œä¸­å¿ƒï¼Œæˆ‘çš„èŒè´£æ˜¯ç»´æŠ¤æœåŠ¡å®ä¾‹ï¼Œä¸éœ€è¦å»æ£€ç´¢æœåŠ¡
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/

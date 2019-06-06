@@ -10,6 +10,8 @@ Simple study notes for springcloud
     --- provider-dept-8001 ：基础例子，没有使用组件
     --- eureka-server-7001 ：eureka服务注册中心
     --- eureka-client-8001 ：eureka服务注册
+    --- eureka-server-7002 ：配合eureka-server-7001实现服务注册中心的集群
+    --- eureka-server-7003 ：配合eureka-server-7001实现服务注册中心的集群
 ## 2 目录说明 ##
 - ***因为牵涉到消费者，服务者等相关内容，每次测试可能会牵涉多个模块，这里分组介绍***。
 ### 2.1 公共模块 ###
@@ -186,7 +188,7 @@ eureka:
 *
 1. 修改各个模块的yml文件，以7001为例,其他的类比，port，hostname，和defaultZone需要修改：
 ```
-#集群
+#7001集群
 server:
   port: 7001
 eureka:
@@ -198,10 +200,37 @@ eureka:
     service-url:
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 ```
+```
+#7002集群
+server:
+  port: 7002
+eureka:
+  instance:
+    hostname: eureka7002.com #erueka服务端的实例名称
+  client:
+    register-with-eureka: false #false表示不向注册中心注册自己
+    fetch-registry: false #false表示自己端就是注册中心，我的职责是维护服务实例，不需要去检索服务
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
+
+```
+```
+#7003集群
+server:
+  port: 7003
+eureka:
+  instance:
+    hostname: eureka7003.com #erueka服务端的实例名称
+  client:
+    register-with-eureka: false #false表示不向注册中心注册自己
+    fetch-registry: false #false表示自己端就是注册中心，我的职责是维护服务实例，不需要去检索服务
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+```
 2. 7001和7002和7003，主启动类的注解和7001一样
 3. 修改eureka-client-8001模块的yml
 ```
 defaultZone: http://erureka7001.com:7001/eureka/,http://erureka7001.com:7002/eureka/,http://erureka7001.com:7003/eureka/  #集群服务注册中心
 ```
-4. 运行结果
+4. 浏览器输入：`http://eureka7001.com`，同时也能查看其它两个运行情况，`http://eureka7002.com`或者`http://eureka7003.com`。例如：eureka7001运行结果
 <img src="2-image/eureka-server-more-1.png" width = "800" height = "300" align=center />
