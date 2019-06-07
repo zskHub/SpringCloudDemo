@@ -10,9 +10,9 @@
 
     </parent>
     <groupId>cn.zsk</groupId>
-    <artifactId>consumer-dept-80</artifactId>
+    <artifactId>consumer-dept-8002</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>consumer-dept-80</name>
+    <name>consumer-dept-8002</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
