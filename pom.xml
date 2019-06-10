@@ -27,6 +27,7 @@
         <module>consumer-ribbon-9001</module>
         <module>eureka-client-8002</module>
         <module>eureka-client-8003</module>
+        <module>consumer-ribbon-9002</module>
     </modules>
     <properties>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>

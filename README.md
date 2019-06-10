@@ -258,7 +258,7 @@ defaultZone: http://erureka7001.com:7001/eureka/,http://erureka7001.com:7002/eur
 <img src="2-image/eureka-server-more-1.png" width = "800" height = "300" align=center />
 
 ### 2.5 ribbon的集成 ###
-* 使用的模块：consumer-ribbon-9001 *
+* 使用的模块：consumer-ribbon-9001 ,consumer-ribbon-9002*
 #### 2.5.1 consumer-ribbon-9001 ####
 #### 使用ribbon默认负载均衡算法（轮询算法）####
 - 说明：本次使用ribbon的默认轮询算法，使用模块eureka-client-8001，eureka-client-8002，eureka-client-8003。辅助测试负载均衡效果
@@ -337,3 +337,125 @@ eureka:
 <img src="2-image/ribbon-03.png" width = "500" height = "300" align=center />
 
 5. 如果多次刷新db_resouce字段依次出现不同的的值，说明查询的时候访问的不同的数据库，即访问了不同的微服务，实现了轮询方式的负载均衡
+
+#### 使用ribbon其他算法（ribbon自带的，不是自定义的） ####
+- 只需要在ConfigBean中增加一个配置就行了,例如改用随机算法：
+```
+    @Bean
+    @LoadBalanced
+    public RestTemplate getRestTemplate(){
+        return new RestTemplate();
+    }
+
+    /*
+     * 如果不定义这个myRule（）方法，默认使用轮询算法。
+     * 现在使用重新选择的随机算法代替原来的轮询算法
+     * */
+    @Bean
+    public IRule myRule(){
+        return new RandomRule();
+    }
+```
+其他算法介绍，如图：
+<img src="2-image/ribbon-04.png" width = "500" height = "250" align=center />
+
+#### 2.5.2 consumer-ribbon-9002 ####
+##### a.说明 #####
+***本模块主要演示自定义ribbon负载均衡算法，同时本次的例子中，是简单的demo，例如自定义算法时的变量不是线程安全的，如果投入生产，请修改！！！***
+##### b.注意事项 #####
+
+##### c.实现方式 #####
+1. pom文件
+```
+ <!--自定义的公共模块-->
+        <dependency>
+            <groupId>cn.zsk</groupId>
+            <artifactId>common-api</artifactId>
+            <version>${common-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <!--Ribbon -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+```
+2. yml配置
+```
+server:
+  port: 9002
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+
+```
+3. 主启动类,增加了`@RibbonClient`注解，注解中的参数分别是微服务的名称，以及自定义算法配置类，（*注意是配置类，不是算法类*）
+```
+@SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
+        DataSourceTransactionManagerAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class
+})
+@EnableEurekaClient
+//在启动该微服务的时候就能去加载我们自定义的Ribbon配置类，从而使配置生效
+@RibbonClient(name = "EUREKA-CLIENT-8001",configuration = MyRuleConfig.class)
+public class ConsumerRibbon9002Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ConsumerRibbon9002Application.class, args);
+    }
+
+}
+```
+4. 创建配置类，注意配置类的创建位置。主启动类的包信息是`package cn.zsk.ribbon9002;`，
+说明新建的配置类不能放在`ribbon9002`这个包下,以及这个包的子包中。这里新建了一个包：`cn.zsk.ribbon.myrule;`。
+官网上的一些说明：
+<img src="2-image/ribbon-05.png" width = "600" height = "200" align=center />
+
+新建的配置类,MyRule()是自定义的算法：
+```
+@Configuration
+public class MyRuleConfig {
+
+    @Bean
+    public IRule myRule(){
+        return new MyRule();
+    }
+}
+
+```
+
+5. 自定义算法MyRule()类的创建，（这里建议可以去github上看一下源码，按照需求修改）。当前的需求：使用轮询算法，但是每个微服务执行五次，然后再次轮询。
+大体是拷贝github源码，主要的修改代码
+```
+ if(total < 5){
+    server = upList.get(index);
+    total ++;
+}else {
+    total = 0 ;
+    index ++;
+    if(index >= upList.size()){
+        index =0;
+    }
+}
+
+```
+##### d.测试 #####
+1. 启动eureka-server-7001，eureka-server-7002，eureka-server-7003
+2. 启动eureka-client-8001，eureka-client-8002，eureka-client-8003
+3. 启动consumer-ribbon-9002模块
+4. 打开浏览器，输入`localhost:9002/consumer/dept/list`,多次刷新，可查看到返回的结果是不同数据库的内容,并且每5次才会换一个微服务

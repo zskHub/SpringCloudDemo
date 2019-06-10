@@ -1,8 +1,6 @@
-package cn.zsk.ribbon9001.config;
+package cn.zsk.ribbon9002.config;
 
 import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RandomRule;
-import com.netflix.loadbalancer.RetryRule;
 import com.netflix.loadbalancer.RoundRobinRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -22,17 +20,5 @@ public class ConfigBean {
         return new RestTemplate();
     }
 
-    /*
-     * 如果不定义这个myRule（）方法，默认使用轮询算法。
-     * 现在使用重新选择的随机算法代替原来的轮询算法
-     * */
-    @Bean
-    public IRule myRule(){
-        //轮询
-//        return new RoundRobinRule();
-        //随机
-//        return new RandomRule();
 
-        return new RetryRule();
-    }
 }

@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="1.更新Remark.md&#10;2.增加eureka-client-8002和eureka-client-8003模块，用于负载均衡测试&#10;3.实现ribbon默认方法的负载均衡（轮询方式）">
-      <change afterPath="$PROJECT_DIR$/1-db/springclouddemo1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-db/springclouddemo2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-image/ribbon-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-image/ribbon-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-image/ribbon-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/EurekaClient8002Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/controller/DpetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/dao/DeptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/service/DeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8002/src/test/java/cn/zsk/client8002/EurekaClient8002ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/EurekaClient8003Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/controller/DpetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/dao/DeptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/service/DeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-8003/src/test/java/cn/zsk/client8003/EurekaClient8003ApplicationTests.java" afterDir="false" />
+    <list default="true" id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/2-image/ribbon-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-image/ribbon-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/MyRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/MyRuleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/ConsumerRibbon9002Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/config/ConfigBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/controller/Consumer_DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-ribbon-9002/src/test/java/cn/zsk/ribbon9002/ConsumerRibbon9002ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/config/ConfigBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/config/ConfigBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,6 +41,7 @@
     <ignored path="$PROJECT_DIR$/consumer-ribbon-9001/target/" />
     <ignored path="$PROJECT_DIR$/eureka-client-8002/target/" />
     <ignored path="$PROJECT_DIR$/eureka-client-8003/target/" />
+    <ignored path="$PROJECT_DIR$/consumer-ribbon-9002/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,30 +53,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/ConsumerRibbon9001Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-client-8002/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="38" column="15" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="339">
-                <caret line="337" selection-start-line="337" selection-end-line="337" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="-1">
+                <caret line="440" lean-forward="true" selection-start-line="440" selection-end-line="440" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -105,28 +68,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/config/ConfigBean.java">
+        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="259">
+              <caret line="42" column="21" selection-start-line="21" selection-start-column="7" selection-end-line="42" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/pom.xml">
+        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/config/ConfigBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="42" column="21" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/ConsumerRibbon9002Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/MyRuleConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/MyRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="63" selection-start-line="53" selection-start-column="11" selection-end-line="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1828#1829#0" expanded="true" />
+                <element signature="e#1899#1900#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#2006#2007#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,15 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/config/MybatisConfig.java" />
-        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/resources/mapper/DeptDao.xml" />
-        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/controller/DpetController.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/entity/DeptEntity.java" />
-        <option value="$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/config/ConfigBean.java" />
-        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/DeptService.java" />
-        <option value="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/impl/DeptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/common-api/src/main/java/config/MybatisConfig.java" />
         <option value="$PROJECT_DIR$/common-api/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/consumer-dept-80/src/main/java/cn/zsk/consumerdept80/ConsumerDept80Application.java" />
         <option value="$PROJECT_DIR$/consumer-dept-80/pom.xml" />
@@ -190,7 +183,6 @@
         <option value="$PROJECT_DIR$/eureka-server-7002/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/eureka-server-7003/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/consumer-dept-8002/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-8003/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-8002/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/service/impl/DeptServiceImpl.java" />
@@ -203,6 +195,16 @@
         <option value="$PROJECT_DIR$/eureka-client-8003/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/eureka-client-8002/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/eureka-client-8003/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/config/ConfigBean.java" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/config/ConfigBean.java" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/ConsumerRibbon9002Application.java" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/RandomRule_ZY.java" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/myRule.java" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/MySelfRule.java" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/MyRuleConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -235,8 +237,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="719" />
-    <option name="y" value="28" />
+    <option name="x" value="179" />
+    <option name="y" value="49" />
     <option name="width" value="1575" />
     <option name="height" value="982" />
   </component>
@@ -257,88 +259,57 @@
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-ribbon-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-ribbon-9002" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-ribbon-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-ribbon-9002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-ribbon-9001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-ribbon-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-ribbon-9002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-ribbon-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-ribbon-9002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon9001" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-ribbon-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-ribbon-9002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon9001" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="zsk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-ribbon-9001" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-ribbon-9002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsk" type="462c0819:PsiDirectoryNode" />
+              <item name="myrule" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-ribbon-9001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client-8002" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client-8002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client-8002" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer-ribbon-9002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client-8002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsk" type="462c0819:PsiDirectoryNode" />
+              <item name="ribbon9002" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -355,7 +326,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/eureka-client-8003/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -365,19 +336,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\consumer-ribbon-9002\src\main\java\cn\zsk\ribbon9002" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\consumer-ribbon-9002\src\main\resources" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\eureka-client-8003\src\main\resources" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\eureka-client-8002\src\main\resources" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\eureka-client-8003\src\main\java\cn\zsk\client8003" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\eureka-client-8002\src\main\java\cn\zsk\client8002" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\eureka-client-8001\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="config" />
       <recent name="cn.zsk.provider8001.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\1-db" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\2-image" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\1-db" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -392,7 +363,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConsumerRibbon9001Application">
+  <component name="RunManager" selected="Spring Boot.ConsumerRibbon9002Application">
     <configuration name="ConsumerDept80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumer-dept-8002" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.consumer8002.ConsumerDept80Application" />
@@ -403,6 +374,13 @@
     <configuration name="ConsumerRibbon9001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumer-ribbon-9001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.ribbon9001.ConsumerRibbon9001Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerRibbon9002Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="consumer-ribbon-9002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.ribbon9002.ConsumerRibbon9002Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -472,6 +450,7 @@
       <item itemvalue="Spring Boot.ConsumerDept80Application" />
       <item itemvalue="Spring Boot.EurekaClient8002Application" />
       <item itemvalue="Spring Boot.EurekaClient8003Application" />
+      <item itemvalue="Spring Boot.ConsumerRibbon9002Application" />
     </list>
     <recent_temporary>
       <list>
@@ -557,14 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559732474542</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1.更新Remark.md&#10;2.增加eureka-client-8002和eureka-client-8003模块，用于负载均衡测试&#10;3.实现ribbon默认方法的负载均衡（轮询方式）">
+      <created>1560138567168</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560138567168</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66067000" />
+    <option name="totallyTimeSpent" value="77859000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="719" y="28" width="1575" height="982" extended-state="0" />
+    <frame x="179" y="49" width="1575" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -657,7 +643,8 @@
     <MESSAGE value="更新Remark.md" />
     <MESSAGE value="1.更新Remark.md&#10;2.进一步完善eureka-client-8001的配置信息" />
     <MESSAGE value="1.更新Remark.md&#10;2.增加eureka-server的集群配置，修改了eureka-server-7001集群配置，增加了7002和7003模块&#10;3.增加了eureka-client-8001的服务发现测试（不是重点，简单加了点）" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.更新Remark.md&#10;2.增加eureka-server的集群配置，修改了eureka-server-7001集群配置，增加了7002和7003模块&#10;3.增加了eureka-client-8001的服务发现测试（不是重点，简单加了点）" />
+    <MESSAGE value="1.更新Remark.md&#10;2.增加eureka-client-8002和eureka-client-8003模块，用于负载均衡测试&#10;3.实现ribbon默认方法的负载均衡（轮询方式）" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.更新Remark.md&#10;2.增加eureka-client-8002和eureka-client-8003模块，用于负载均衡测试&#10;3.实现ribbon默认方法的负载均衡（轮询方式）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -672,48 +659,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eureka-7001/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-dept-8001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="36" column="21" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/dao/DeptDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/impl/DeptServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/DeptService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/config/MybatisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -988,27 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/ConsumerRibbon9001Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="42" column="21" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/config/ConfigBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-client-8002/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1016,18 +940,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" selection-start-line="20" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/controller/Consumer_DeptController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/ConsumerRibbon9001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/config/ConfigBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="24" selection-start-line="24" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/config/ConfigBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="42" column="21" selection-start-line="21" selection-start-column="7" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/ConsumerRibbon9002Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/MyRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="63" selection-start-line="53" selection-start-column="11" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon/myrule/MyRuleConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="242">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="339">
-            <caret line="337" selection-start-line="337" selection-end-line="337" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-1">
+            <caret line="440" lean-forward="true" selection-start-line="440" selection-end-line="440" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

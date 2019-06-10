@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/consumer-ribbon-9001/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-8002/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-8003/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9002/pom.xml" />
       </list>
     </option>
   </component>

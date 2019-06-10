@@ -15,6 +15,7 @@
         <module name="eureka-client-8003" />
         <module name="provider-dept-8001" />
         <module name="eureka-client-8001" />
+        <module name="consumer-ribbon-9002" />
         <module name="consumer-ribbon-9001" />
       </profile>
     </annotationProcessing>
@@ -29,6 +30,7 @@
       <module name="common-api" options="-parameters" />
       <module name="consumer-dept-8002" options="-parameters" />
       <module name="consumer-ribbon-9001" options="-parameters" />
+      <module name="consumer-ribbon-9002" options="-parameters" />
       <module name="eureka-client-8001" options="-parameters" />
       <module name="eureka-client-8002" options="-parameters" />
       <module name="eureka-client-8003" options="-parameters" />
