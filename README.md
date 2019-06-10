@@ -1,5 +1,23 @@
 # SpringCloudDemo #
-Simple study notes for springcloud
+Simple study notes for springcloud  
+- 说明方式，（以eureka为例）：  
+     2.3 eureka（主要的技术）    
+        模块说明：XXXXXX。（简单介绍使用哪些模块）  
+    2.3.1 XXX模块（下面开始对模块的详细介绍）   
+      a.说明  
+      （对该模块的说明）  
+      b.注意事项  
+        （过程中需要注意的地方。）  
+      c.实现方式（具体实现方式）   
+        1. XXXX  
+        2. XXXX  
+        。。。  
+      d.测试启动（如何测试）   
+       1. XXXX  
+       2. XXXX  
+       。。。  
+      e.其他（其他额外需要的地方）  
+     
 
 ## 1 目录结构 ##
     -SpringCloudDemo
@@ -12,6 +30,8 @@ Simple study notes for springcloud
     --- eureka-client-8001 ：eureka服务注册
     --- eureka-server-7002 ：配合eureka-server-7001实现服务注册中心的集群
     --- eureka-server-7003 ：配合eureka-server-7001实现服务注册中心的集群
+    --- consumer-ribbon-9001 ：集成ribbon
+---
 ## 2 目录说明 ##
 - ***因为牵涉到消费者，服务者等相关内容，每次测试可能会牵涉多个模块，这里分组介绍***。
 ### 2.1 公共模块 ###
@@ -31,8 +51,8 @@ Simple study notes for springcloud
 - 用于eureka的服务注册管理
 ##### b.注意事项 #####
     1. 注意版本的对应关系，建议使用父pom集中管理版本信息。
-    2. 有些模块用不到有关数据库的相关信息（例如：服务消费者），需要手动关闭springboot的数据库的自动装载。并且尽量不要导入多余的包
-        (例如：有关使用druid的包)，否则有些包也会自动去寻找配置文件中的相关信息，项目启动就会报错。
+    2. 有些模块用不到有关数据库的相关信息（例如：服务消费者）,所以也不会有数据库的相关配置信息。此时需要手动关闭springboot的数据库的自动装载。并且尽量不要导入多余的包
+        (例如：有关使用druid的包)，否则有些包也会自动去寻找配置文件中的相关信息，然后找不到，项目启动就会报错。
 ##### c.实现方式 #####
 1. pom文件增加依赖
 ```
@@ -70,14 +90,14 @@ eureka:
 1. pom文件增加依赖
 ```
  <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+</dependency>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-config</artifactId>
+</dependency>
 ```
 2. 主启动类增加注解:`@EnableEurekaClient`
 3. yml文件增加：
@@ -234,3 +254,7 @@ defaultZone: http://erureka7001.com:7001/eureka/,http://erureka7001.com:7002/eur
 ```
 4. 浏览器输入：`http://eureka7001.com`，同时也能查看其它两个运行情况，`http://eureka7002.com`或者`http://eureka7003.com`。例如：eureka7001运行结果
 <img src="2-image/eureka-server-more-1.png" width = "800" height = "300" align=center />
+
+### 2.5 ribbon的集成 ###
+* 使用的模块：consumer-ribbon-9001 *
+#### 2.5.1 consumer-ribbon-9001 ####

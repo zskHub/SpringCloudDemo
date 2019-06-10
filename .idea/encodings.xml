@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/common-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common-api/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consumer-dept-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-ribbon-9001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-8001/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server-7001" charset="UTF-8" />
@@ -14,6 +15,8 @@
     <file url="file://$PROJECT_DIR$/eureka-server-7003/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-dept-8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-dept-8001/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon-test" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

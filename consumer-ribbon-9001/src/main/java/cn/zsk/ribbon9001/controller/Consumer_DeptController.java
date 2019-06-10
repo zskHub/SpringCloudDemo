@@ -1,4 +1,4 @@
-package cn.zsk.consumer8002.controller;
+package cn.zsk.ribbon9001.controller;
 
 import cn.zsk.entity.DeptEntity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("consumer/dept")
 public class Consumer_DeptController {
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://EUREKA-CLIENT-8001";
     @Autowired
     private RestTemplate restTemplate;
 
