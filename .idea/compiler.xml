@@ -11,6 +11,8 @@
         <module name="eureka-server-7003" />
         <module name="eureka-server-7002" />
         <module name="eureka-server-7001" />
+        <module name="eureka-client-8002" />
+        <module name="eureka-client-8003" />
         <module name="provider-dept-8001" />
         <module name="eureka-client-8001" />
         <module name="consumer-ribbon-9001" />
@@ -28,6 +30,8 @@
       <module name="consumer-dept-8002" options="-parameters" />
       <module name="consumer-ribbon-9001" options="-parameters" />
       <module name="eureka-client-8001" options="-parameters" />
+      <module name="eureka-client-8002" options="-parameters" />
+      <module name="eureka-client-8003" options="-parameters" />
       <module name="eureka-server-7001" options="-parameters" />
       <module name="eureka-server-7002" options="-parameters" />
       <module name="eureka-server-7003" options="-parameters" />

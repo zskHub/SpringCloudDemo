@@ -31,7 +31,9 @@ Simple study notes for springcloud
     --- eureka-server-7002 ：配合eureka-server-7001实现服务注册中心的集群
     --- eureka-server-7003 ：配合eureka-server-7001实现服务注册中心的集群
     --- consumer-ribbon-9001 ：集成ribbon
----
+    --- eureka-client-8002 ：配合eureka-client-8001实现多个微服务的运行，可用于负载均衡的测试
+    --- eureka-client-8003 ：配合eureka-client-8001实现多个微服务的运行，可用于负载均衡的测试
+
 ## 2 目录说明 ##
 - ***因为牵涉到消费者，服务者等相关内容，每次测试可能会牵涉多个模块，这里分组介绍***。
 ### 2.1 公共模块 ###
@@ -258,3 +260,80 @@ defaultZone: http://erureka7001.com:7001/eureka/,http://erureka7001.com:7002/eur
 ### 2.5 ribbon的集成 ###
 * 使用的模块：consumer-ribbon-9001 *
 #### 2.5.1 consumer-ribbon-9001 ####
+#### 使用ribbon默认负载均衡算法（轮询算法）####
+- 说明：本次使用ribbon的默认轮询算法，使用模块eureka-client-8001，eureka-client-8002，eureka-client-8003。辅助测试负载均衡效果
+##### a.说明 #####
+1. 测试负载均衡时需要多个微服务提供者，这里仿照eureka-client-8001，新建两个服务提供者模块分别是eureka-client-8002和eureka-client-8003。
+2. 同时为了区分不同的微服务，8002和8003分别访问springcloudde1和springclouddemo2数据库。（dept表中db_source字段不一样，用于区分不同的微服务查询的结果）
+3. 修改8002和8003模块的相关信息。主要包括：
+***端口号，数据库名称，instance-id***,按照8002为例，如图：
+<img src="2-image/ribbon-01.png" width = "800" height = "300" align=center />
+
+##### b.注意事项 #####
+
+##### c.实现方法 #####
+1. pom文件（因为需要和eureka集成，所以这里将所有的jar包都放进去了），
+```
+ <!--自定义的公共模块-->
+        <dependency>
+            <groupId>cn.zsk</groupId>
+            <artifactId>common-api</artifactId>
+            <version>${common-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <!--Ribbon -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+```
+2. yml 文件
+```
+server:
+  port: 9001
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+```
+3. 主启动类注解
+```
+@SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
+        DataSourceTransactionManagerAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class
+})
+@EnableEurekaClient
+```
+4. 在ConfigBean中getRestTemplate方法增加注解`@LoadBalanced`
+```
+    @Bean
+    @LoadBalanced
+    public RestTemplate getRestTemplate(){
+        return new RestTemplate();
+    }
+```
+##### d.测试 #####
+1. 启动eureka-server-7001，eureka-server-7002，eureka-server-7003
+2. 启动eureka-client-8001，eureka-client-8002，eureka-client-8003
+此时如图
+<img src="2-image/ribbon-02.png" width = "800" height = "300" align=center />
+
+3. 启动consumer-ribbon-9001模块
+4. 打开浏览器，输入`localhost:9001/consumer/dept/list`,多次刷新，可查看到返回的结果是不同数据库的内容
+<img src="2-image/ribbon-03.png" width = "500" height = "300" align=center />
+
+5. 如果多次刷新db_resouce字段依次出现不同的的值，说明查询的时候访问的不同的数据库，即访问了不同的微服务，实现了轮询方式的负载均衡
