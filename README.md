@@ -30,9 +30,10 @@ Simple study notes for springcloud
     --- eureka-client-8001 ：eureka服务注册
     --- eureka-server-7002 ：配合eureka-server-7001实现服务注册中心的集群
     --- eureka-server-7003 ：配合eureka-server-7001实现服务注册中心的集群
-    --- consumer-ribbon-9001 ：集成ribbon
+    --- consumer-ribbon-9001 ：集成ribbon，实现简单的负载均衡
     --- eureka-client-8002 ：配合eureka-client-8001实现多个微服务的运行，可用于负载均衡的测试
     --- eureka-client-8003 ：配合eureka-client-8001实现多个微服务的运行，可用于负载均衡的测试
+    --- consumer-ribbon-9002 ：集成ribbon，实现自定义负载均衡算法
 
 ## 2 目录说明 ##
 - ***因为牵涉到消费者，服务者等相关内容，每次测试可能会牵涉多个模块，这里分组介绍***。
@@ -459,3 +460,16 @@ public class MyRuleConfig {
 2. 启动eureka-client-8001，eureka-client-8002，eureka-client-8003
 3. 启动consumer-ribbon-9002模块
 4. 打开浏览器，输入`localhost:9002/consumer/dept/list`,多次刷新，可查看到返回的结果是不同数据库的内容,并且每5次才会换一个微服务
+
+### 2.3 feign ###
+    模块说明：XXXXXX。（简单介绍使用哪些模块）  
+#### 2.3.1 XXX模块 ####
+##### a.说明 #####
+  
+##### b.注意事项 #####
+  
+##### c.实现方式#####
+1. 
+##### d.测试启动 #####  
+1. XXXX  
+2. XXXX

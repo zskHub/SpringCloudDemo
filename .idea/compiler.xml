@@ -12,6 +12,7 @@
         <module name="eureka-server-7002" />
         <module name="eureka-server-7001" />
         <module name="eureka-client-8002" />
+        <module name="consumer-feign-9003" />
         <module name="eureka-client-8003" />
         <module name="provider-dept-8001" />
         <module name="eureka-client-8001" />
@@ -20,6 +21,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="demo" target="1.8" />
       <module name="eureka-test" target="1.8" />
       <module name="ribbon-8002" target="1.8" />
       <module name="ribbon-test" target="1.8" />
@@ -29,8 +31,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common-api" options="-parameters" />
       <module name="consumer-dept-8002" options="-parameters" />
+      <module name="consumer-feign-9003" options="-parameters" />
       <module name="consumer-ribbon-9001" options="-parameters" />
       <module name="consumer-ribbon-9002" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="eureka-client-8001" options="-parameters" />
       <module name="eureka-client-8002" options="-parameters" />
       <module name="eureka-client-8003" options="-parameters" />

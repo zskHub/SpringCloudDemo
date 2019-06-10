@@ -30,4 +30,6 @@ public class DeptEntity {
         super();
         this.deptName = deptName;
     }
+    public DeptEntity(){
+    }
 }
