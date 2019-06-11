@@ -462,14 +462,113 @@ public class MyRuleConfig {
 4. 打开浏览器，输入`localhost:9002/consumer/dept/list`,多次刷新，可查看到返回的结果是不同数据库的内容,并且每5次才会换一个微服务
 
 ### 2.3 feign ###
-    模块说明：XXXXXX。（简单介绍使用哪些模块）  
-#### 2.3.1 XXX模块 ####
+    主要使用的模块：consumer-feign-9003。修改了common-api模块，增加了service层并且在该层增加了一个类。
+#### 2.3.1 consumer-feign-9003 ####
 ##### a.说明 #####
-  
+- 使用feign实现接口化编程 
+- feign默认使用了ribbon的轮询方式的负载均衡，本例中并没有集成feign+ribbon的自定义负载均衡
 ##### b.注意事项 #####
   
-##### c.实现方式#####
-1. 
+##### c.实现方式 #####
+1. pom文件
+```
+  <!--自定义的公共模块-->
+    <dependency>
+        <groupId>cn.zsk</groupId>
+        <artifactId>common-api</artifactId>
+        <version>${common-api.version}</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
+    
+    
+    <!--feign-->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
+    </dependency>
+``` 
+2. yml文件
+```
+server:
+  port: 9003
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+
+```
+3. 本模块主启动类
+```
+@SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
+        DataSourceTransactionManagerAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class
+})
+@EnableEurekaClient
+@EnableFeignClients(basePackages = {"cn.zsk"})
+```
+4. 修改common-api模块
+   1. 修改pom
+   ```
+   <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!--feign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+   ```
+   2. 新建cn.zsk.service包，然后新建一个类：DeptService.java
+   ```
+   @FeignClient(value = "EUREKA-CLIENT-8001")
+    public interface DeptService {
+
+        @RequestMapping(value = "/dept/get/{id}",method = RequestMethod.GET)
+        DeptEntity getByDeptId(@PathVariable("deptId") long deptId);
+    
+        @RequestMapping(value = "/dept/list",method = RequestMethod.GET)
+        List<DeptEntity> list();
+    
+        @RequestMapping(value = "/dept/add",method = RequestMethod.POST)
+        boolean add(DeptEntity deptEntity);
+    }
+   ```
+   3. 说明一下common-api模块新建的DeptService.java。 首先是pom导入有关feign的包。然后加上`@FeignClient`注解，
+   `value = "EUREKA-CLIENT-8001`是指明哪个服务。然后`@RequestMapping(value = "/dept/list",method = RequestMethod.GET)`指明的是微服务的访问地址，
+   在本例中其实就是eureka-client-7001（或者7002和7003）中的controller中的 `/dept/list`方法。
+5. 修改consumer-feign-9003 的controller方法（变回原来熟悉的controller层调用service层了）。注意DeptService是common-api模块的。
+```
+@Autowired
+private DeptService deptService;
+
+ @RequestMapping("list")
+ public List<DeptEntity> list(){
+    return deptService.list();
+   }
+```
+   
 ##### d.测试启动 #####  
-1. XXXX  
-2. XXXX
+1. 启动eureka-server-7001，eureka-server-7002，eureka-server-7003
+2. 启动eureka-client-8001，eureka-client-8002，eureka-client-8003
+3. 启动consumer-feign-9003模块
+4. 打开浏览器，输入`localhost:9003/consumer/dept/list`,多次刷新，可查看到返回的结果是不同数据库的内容。而且是轮询方式的。
