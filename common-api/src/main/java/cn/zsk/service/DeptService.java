@@ -15,7 +15,7 @@ import java.util.List;
 @FeignClient(value = "EUREKA-CLIENT-8001")
 public interface DeptService {
 
-    @RequestMapping(value = "/dept/get/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/dept/getByDeptId/{deptId}",method = RequestMethod.GET)
     DeptEntity getByDeptId(@PathVariable("deptId") long deptId);
 
     @RequestMapping(value = "/dept/list",method = RequestMethod.GET)

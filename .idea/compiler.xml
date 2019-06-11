@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="common-api" />
-        <module name="consumer-dept-8002" />
-        <module name="eureka-server-7003" />
-        <module name="eureka-server-7002" />
-        <module name="eureka-server-7001" />
-        <module name="provider-dept-8001" />
         <module name="consumer-feign-9003" />
+        <module name="hystrix-client-8011" />
+        <module name="provider-dept-8001" />
+        <module name="consumer-ribbon-9002" />
+        <module name="consumer-ribbon-9001" />
         <module name="eureka-client-8003" />
         <module name="eureka-client-8002" />
         <module name="eureka-client-8001" />
-        <module name="consumer-ribbon-9002" />
-        <module name="consumer-ribbon-9001" />
+        <module name="eureka-server-7001" />
+        <module name="consumer-dept-8002" />
+        <module name="consumer-feign-ribbon-9004" />
+        <module name="eureka-server-7003" />
+        <module name="eureka-server-7002" />
+        <module name="common-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -32,6 +34,7 @@
       <module name="common-api" options="-parameters" />
       <module name="consumer-dept-8002" options="-parameters" />
       <module name="consumer-feign-9003" options="-parameters" />
+      <module name="consumer-feign-ribbon-9004" options="-parameters" />
       <module name="consumer-ribbon-9001" options="-parameters" />
       <module name="consumer-ribbon-9002" options="-parameters" />
       <module name="demo" options="-parameters" />
@@ -42,6 +45,7 @@
       <module name="eureka-server-7002" options="-parameters" />
       <module name="eureka-server-7003" options="-parameters" />
       <module name="eureka-test" options="-parameters" />
+      <module name="hystrix-client-8011" options="-parameters" />
       <module name="provider-dept-8001" options="-parameters" />
       <module name="ribbon-8002" options="-parameters" />
       <module name="ribbon-test" options="-parameters" />

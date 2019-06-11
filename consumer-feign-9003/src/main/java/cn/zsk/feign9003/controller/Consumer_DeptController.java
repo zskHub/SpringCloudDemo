@@ -27,7 +27,7 @@ public class Consumer_DeptController {
         return deptService.add(deptEntity);
     }
 
-    @RequestMapping("getByDeptId")
+    @RequestMapping("getByDeptId/{deptId}")
     public DeptEntity getByDeptId(@PathVariable("deptId") Long deptId){
         return deptService.getByDeptId(deptId);
     }

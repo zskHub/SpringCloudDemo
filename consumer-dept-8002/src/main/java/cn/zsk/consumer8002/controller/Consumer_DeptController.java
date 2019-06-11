@@ -28,7 +28,7 @@ public class Consumer_DeptController {
         return restTemplate.postForObject(REST_URL_PREFIX+"/dept/save",deptEntity,Boolean.class);
     }
 
-    @RequestMapping("getByDeptId")
+    @RequestMapping("getByDeptId/{deptId}")
     public DeptEntity getByDeptId(@PathVariable("deptId") Long deptId){
         return restTemplate.getForObject(REST_URL_PREFIX+"/dept/getByDeptId/"+deptId,DeptEntity.class);
     }

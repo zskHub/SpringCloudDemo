@@ -34,6 +34,7 @@ Simple study notes for springcloud
     --- eureka-client-8002 ：配合eureka-client-8001实现多个微服务的运行，可用于负载均衡的测试
     --- eureka-client-8003 ：配合eureka-client-8001实现多个微服务的运行，可用于负载均衡的测试
     --- consumer-ribbon-9002 ：集成ribbon，实现自定义负载均衡算法
+    --- consumer-feign-9003 : 集成了feign模块
 
 ## 2 目录说明 ##
 - ***因为牵涉到消费者，服务者等相关内容，每次测试可能会牵涉多个模块，这里分组介绍***。
@@ -199,7 +200,7 @@ eureka:
 
 ***目前有的疑问：服务注册中心有了，服务注册有了（服务提供方），服务消费方怎么消费？服务提供方怎么控制服务的暴露（dubbo可以控制具体哪些方法暴露）？***
 
-### 2.4 eureka服务注册中心集群 ###
+#### 2.3.4 eureka服务注册中心集群 ####
 * 使用的模块有：eureka-server-7001 ，eureka-server-7002，eureka-server-7003
   同时为了测试方便在本机的hosts文件修改了ip映射：
   添加了：
@@ -258,9 +259,9 @@ defaultZone: http://erureka7001.com:7001/eureka/,http://erureka7001.com:7002/eur
 4. 浏览器输入：`http://eureka7001.com`，同时也能查看其它两个运行情况，`http://eureka7002.com`或者`http://eureka7003.com`。例如：eureka7001运行结果
 <img src="2-image/eureka-server-more-1.png" width = "800" height = "300" align=center />
 
-### 2.5 ribbon的集成 ###
+### 2.4 ribbon的集成 ###
 * 使用的模块：consumer-ribbon-9001 ,consumer-ribbon-9002*
-#### 2.5.1 consumer-ribbon-9001 ####
+#### 2.4.1 consumer-ribbon-9001 ####
 #### 使用ribbon默认负载均衡算法（轮询算法）####
 - 说明：本次使用ribbon的默认轮询算法，使用模块eureka-client-8001，eureka-client-8002，eureka-client-8003。辅助测试负载均衡效果
 ##### a.说明 #####
@@ -360,7 +361,7 @@ eureka:
 其他算法介绍，如图：
 <img src="2-image/ribbon-04.png" width = "500" height = "250" align=center />
 
-#### 2.5.2 consumer-ribbon-9002 ####
+#### 2.4.2 consumer-ribbon-9002 ####
 ##### a.说明 #####
 ***本模块主要演示自定义ribbon负载均衡算法，同时本次的例子中，是简单的demo，例如自定义算法时的变量不是线程安全的，如果投入生产，请修改！！！***
 ##### b.注意事项 #####
@@ -461,9 +462,9 @@ public class MyRuleConfig {
 3. 启动consumer-ribbon-9002模块
 4. 打开浏览器，输入`localhost:9002/consumer/dept/list`,多次刷新，可查看到返回的结果是不同数据库的内容,并且每5次才会换一个微服务
 
-### 2.3 feign ###
+### 2.5 feign ###
     主要使用的模块：consumer-feign-9003。修改了common-api模块，增加了service层并且在该层增加了一个类。
-#### 2.3.1 consumer-feign-9003 ####
+#### 2.5.1 consumer-feign-9003 ####
 ##### a.说明 #####
 - 使用feign实现接口化编程 
 - feign默认使用了ribbon的轮询方式的负载均衡，本例中并没有集成feign+ribbon的自定义负载均衡
@@ -572,3 +573,81 @@ private DeptService deptService;
 2. 启动eureka-client-8001，eureka-client-8002，eureka-client-8003
 3. 启动consumer-feign-9003模块
 4. 打开浏览器，输入`localhost:9003/consumer/dept/list`,多次刷新，可查看到返回的结果是不同数据库的内容。而且是轮询方式的。
+
+### 2.6 hystrix ###
+#### 2.6.1 hystrix-client-8011 ####   
+##### a.说明 #####
+- 该模块实现了最简单的熔断例子，方便理解hystrix，但实际不会这样用。存在的问题：失败的处理逻辑和业务代码高度耦合；并且每个业务代码都需要一个相应的fallback方法，造成方法的膨胀。
+将会在下个模块处理这两个问题。  
+##### b.注意事项 #####
+
+##### c.实现方式 #####
+1. pom文件
+```
+ <!--自定义的公共模块-->
+        <dependency>
+            <groupId>cn.zsk</groupId>
+            <artifactId>common-api</artifactId>
+            <version>${common-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <!--actuator监控信息完善-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
+        </dependency>
+
+        <!--hystrix-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+``` 
+2. yml 文件,没有特殊的修改，和eureka-client-8001一样。（为了区分不同的项目，端口号还是需要修改的）
+3. 主启动类添加注解`@EnableCircuitBreaker`
+4. controller层修改方法(这里列举出启动一个测试方法)
+```
+    @GetMapping("/list")
+    //一旦调用服务失败，并抛出错误信息，会自动调动processHystrix_GetList方法
+    @HystrixCommand(fallbackMethod = "processHystrix_List")
+    public List<DeptEntity> list(){
+        if(true){
+            throw  new RuntimeException("***********模拟异常了************");
+        }
+        return deptService.list();
+    }
+
+   public List<DeptEntity> processHystrix_List(){
+        DeptEntity deptEntity = new DeptEntity();
+        deptEntity.setDeptNo(0L).setDeptName("异常了，这个是熔断器返回的假的信息").setDbSource("hystrix");
+        List<DeptEntity> deptEntityList = new ArrayList<>();
+        deptEntityList.add(deptEntity);
+        return deptEntityList;
+   }
+```
+##### d.测试启动 #####
+1. 启动eureka-server-7001，eureka-server-7002，eureka-server-7003
+2. 启动hystrix-client-8011
+3. 启动consumer-feign-9003模块
+4. 打开浏览器，输入`localhost:9003/consumer/dept/list`,会返回当出现异常后自定义的信息
+

@@ -23,7 +23,7 @@ public class DpetController {
 
         return deptService.save(deptEntity);
     }
-    @GetMapping("/getByDeptId")
+    @GetMapping("/getByDeptId/{deptId}")
     public DeptEntity getByDeptId(@PathVariable("deptId") Long deptId){
 
         return deptService.getById(deptId);
