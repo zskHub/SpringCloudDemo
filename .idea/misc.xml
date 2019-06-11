@@ -23,6 +23,8 @@
         <option value="$PROJECT_DIR$/hystrix-client-8011/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-client-8012/pom.xml" />
         <option value="$PROJECT_DIR$/consumer-feign-hystrix-9004/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml" />
       </list>
     </option>
   </component>

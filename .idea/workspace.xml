@@ -2,78 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/service/DeptServiceFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/java/cn/zsk/consume9004/ConsumerFeignHystrix9004Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/java/cn/zsk/consume9004/controller/Consumer_DeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/HystrixClient8012Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/controller/DpetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/dao/DeptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/service/DeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-client-8012/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/config/HystrixConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/HystrixDashboard9005Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/entity/DeptEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/entity/DeptEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-dept-8002/src/main/java/cn/zsk/consumer8002/controller/Consumer_DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-dept-8002/src/main/java/cn/zsk/consumer8002/controller/Consumer_DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-dept-8002/src/test/java/cn/zsk/consumer8002/ConsumerDept80ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/ConsumerFeign9003Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/ConsumerFeign9003Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/controller/Consumer_DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/controller/Consumer_DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-feign-9003/src/test/java/cn/zsk/feign9003/ConsumerFeign9003ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/controller/Consumer_DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/controller/Consumer_DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-ribbon-9001/src/test/java/cn/zsk/ribbon9001/ConsumerRibbon9001ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/controller/Consumer_DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/controller/Consumer_DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-ribbon-9002/src/test/java/cn/zsk/ribbon9002/ConsumerRibbon9002ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/dao/DeptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/dao/DeptDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8001/src/test/java/cn/zsk/client8001/EurekaClient8001ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/controller/DpetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/controller/DpetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/dao/DeptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/dao/DeptDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8002/src/test/java/cn/zsk/client8002/EurekaClient8002ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/controller/DpetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/controller/DpetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/dao/DeptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/dao/DeptDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8003/src/test/java/cn/zsk/client8003/EurekaClient8003ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server-7002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server-7002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server-7002/src/test/java/cn/zsk/eurekaserver7002/EurekaServer7002ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server-7003/src/test/java/cn/zsk/eurekaserver7003/EurekaServer7003ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/controller/DpetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/controller/DpetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/dao/DeptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/dao/DeptDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-client-8011/src/test/java/cn/zsk/client8011/HystrixClient8011ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/controller/DpetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/controller/DpetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/dao/DeptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/dao/DeptDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-dept-8001/src/test/java/cn/zsk/provider8001/ProviderDept8001ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,6 +41,8 @@
     <ignored path="$PROJECT_DIR$/hystrix-client-8011/target/" />
     <ignored path="$PROJECT_DIR$/hystrix-client-8012/target/" />
     <ignored path="$PROJECT_DIR$/consumer-feign-hystrix-9004/target/" />
+    <ignored path="$PROJECT_DIR$/hystrix-dashboard/target/" />
+    <ignored path="$PROJECT_DIR$/hystrix-dashboard-9005/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,9 +57,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="237">
-                <caret line="655" column="62" selection-start-line="655" selection-start-column="62" selection-end-line="655" selection-end-column="62" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="1563">
+                <caret line="815" column="3" selection-start-line="815" selection-start-column="3" selection-end-line="815" selection-end-column="3" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -123,10 +69,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/java/cn/zsk/consume9004/controller/Consumer_DeptController.java">
+        <entry file="file://$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/config/HystrixConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="11" selection-start-line="11" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hystrix-client-8011/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="52" column="21" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="52" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/HystrixDashboard9005Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,43 +99,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="12" selection-end-column="123" />
+              <caret selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/java/cn/zsk/consume9004/ConsumerFeignHystrix9004Application.java">
+        <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/service/DeptServiceFallbackFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/service/DeptService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="93" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="38" column="21" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -204,12 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/controller/DpetController.java" />
-        <option value="$PROJECT_DIR$/eureka-client-8002/src/main/java/cn/zsk/client8002/EurekaClient8002Application.java" />
-        <option value="$PROJECT_DIR$/eureka-client-8003/src/main/java/cn/zsk/client8003/EurekaClient8003Application.java" />
-        <option value="$PROJECT_DIR$/eureka-client-8002/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/eureka-client-8003/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/eureka-client-8002/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/eureka-client-8003/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/consumer-ribbon-9002/pom.xml" />
         <option value="$PROJECT_DIR$/consumer-ribbon-9002/src/main/resources/application.yml" />
@@ -232,9 +166,7 @@
         <option value="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/service/impl/DeptServiceImpl.java" />
         <option value="$PROJECT_DIR$/hystrix-client-8011/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/HystrixClient8011Application.java" />
-        <option value="$PROJECT_DIR$/hystrix-client-8011/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/controller/DpetController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-client-8012/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/dao/DeptDao.java" />
         <option value="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/service/impl/DeptServiceImpl.java" />
@@ -254,6 +186,14 @@
         <option value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/service/DeptService.java" />
         <option value="$PROJECT_DIR$/consumer-feign-9003/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/ConsumerFeign9003Application.java" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/HystrixDashboardApplication.java" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/config/MybatisConfig.java" />
+        <option value="$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/config/HystrixConfiguration.java" />
+        <option value="$PROJECT_DIR$/hystrix-client-8011/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard-9005/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -270,11 +210,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="consumer-feign-9003" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="hystrix-dashboard-9005" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="consumer-feign-9003" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="hystrix-dashboard-9005" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -282,8 +222,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="233" />
-    <option name="y" value="57" />
+    <option name="x" value="196" />
+    <option name="y" value="54" />
     <option name="width" value="1575" />
     <option name="height" value="982" />
   </component>
@@ -293,8 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,25 +243,60 @@
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaserver7001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-client-8011" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-client-8011" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-client-8011" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-client-8011" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -331,26 +304,36 @@
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-client-8011" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="client8011" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-client-8011" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="client8011" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-client-8011" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client8011" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-client-8011" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -358,52 +341,42 @@
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-feign-hystrix-9004" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-dashboard-9005" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-feign-hystrix-9004" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-dashboard-9005" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-feign-hystrix-9004" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-feign-hystrix-9004" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-dashboard-9005" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-feign-hystrix-9004" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-dashboard-9005" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consume9004" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-feign-hystrix-9004" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-dashboard-9005" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consume9004" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-feign-hystrix-9004" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix-dashboard-9005" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -412,6 +385,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,30 +398,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\2-image" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\1-db" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.zsk.consume9004.controller" />
-      <recent name="config" />
-      <recent name="cn.zsk.provider8001.config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\hystrix-dashboard-9005\src\main\java\cn\zsk\dashboard" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\consumer-feign-hystrix-9004\src\main\resources" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\hystrix-client-8012\src\main\java\cn\zsk\hystrix8012" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\hystrix-client-8012\src\main\resources" />
       <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\hystrix-client-8011\src\main\java\cn\zsk\client8011" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\hystrix-client-8011\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.zsk.client8011.config" />
+      <recent name="cn.zsk.consume9004.controller" />
+      <recent name="config" />
+      <recent name="cn.zsk.provider8001.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\2-image" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\1-db" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,7 +437,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.HystrixClient8012Application">
+  <component name="RunManager" selected="Spring Boot.HystrixDashboard9005Application">
     <configuration name="ConsumerDept80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumer-dept-8002" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.consumer8002.ConsumerDept80Application" />
@@ -479,13 +455,6 @@
     <configuration name="ConsumerFeignHystrix9004Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumer-feign-hystrix-9004" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.consume9004.ConsumerFeignHystrix9004Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerFeignRibbon9004Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="consumer-feign-ribbon-9004" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.feignribbon9004.ConsumerFeignRibbon9004Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -566,6 +535,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HystrixDashboard9005Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hystrix-dashboard-9005" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.zsk.dashboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.dashboard.HystrixDashboard9005Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProviderDept8001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="provider-dept-8001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.provider8001.ProviderDept8001Application" />
@@ -584,14 +566,15 @@
       <item itemvalue="Spring Boot.EurekaClient8003Application" />
       <item itemvalue="Spring Boot.ConsumerRibbon9002Application" />
       <item itemvalue="Spring Boot.ConsumerFeign9003Application" />
-      <item itemvalue="Spring Boot.EurekaServer7001Application" />
-      <item itemvalue="Spring Boot.ConsumerFeignRibbon9004Application" />
       <item itemvalue="Spring Boot.HystrixClient8011Application" />
       <item itemvalue="Spring Boot.HystrixClient8012Application" />
       <item itemvalue="Spring Boot.ConsumerFeignHystrix9004Application" />
+      <item itemvalue="Spring Boot.EurekaServer7001Application" />
+      <item itemvalue="Spring Boot.HystrixDashboard9005Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.HystrixDashboard9005Application" />
         <item itemvalue="Spring Boot.EurekaServer7001Application" />
       </list>
     </recent_temporary>
@@ -617,7 +600,8 @@
       <workItem from="1559698565545" duration="13761000" />
       <workItem from="1559784676351" duration="3132000" />
       <workItem from="1559896097347" duration="704000" />
-      <workItem from="1560214183143" duration="22596000" />
+      <workItem from="1560214183143" duration="23913000" />
+      <workItem from="1560244715329" duration="7233000" />
     </task>
     <task id="LOCAL-00001" summary="first commit&#10;Framework to build system">
       <created>1558927930801</created>
@@ -710,14 +694,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560232678521</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1.增加hystrix的服务降级&#10;2.为了区分不同的DeptService，更改了api模块的包结构&#10;3.删除了consumer-feign-9003多余的代码&#10;4.删除了所有的test文件夹">
+      <created>1560243044410</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560243044410</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106959000" />
+    <option name="totallyTimeSpent" value="115509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="233" y="57" width="1575" height="982" extended-state="0" />
+    <frame x="76" y="56" width="1575" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -727,7 +718,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.2858086" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.28976896" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" content_ui="combo" id="Run" order="2" visible="true" weight="0.33008525" />
@@ -748,7 +739,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.28646865" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.23894389" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -815,7 +806,8 @@
     <MESSAGE value="1.增加feign模块&#10;2.为了配合feign，修改了common-api模块：增加了server层" />
     <MESSAGE value="1.删除feign模块冗余代码&#10;2.更新README.md说明" />
     <MESSAGE value="1.增加hystrix的基础例子&#10;2.修改getByDeptId（）方法的RequestMapping书写错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.增加hystrix的基础例子&#10;2.修改getByDeptId（）方法的RequestMapping书写错误" />
+    <MESSAGE value="1.增加hystrix的服务降级&#10;2.为了区分不同的DeptService，更改了api模块的包结构&#10;3.删除了consumer-feign-9003多余的代码&#10;4.删除了所有的test文件夹" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.增加hystrix的服务降级&#10;2.为了区分不同的DeptService，更改了api模块的包结构&#10;3.删除了consumer-feign-9003多余的代码&#10;4.删除了所有的test文件夹" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -830,60 +822,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/ribbon9002/ConsumerRibbon9002Application.java" />
-    <entry file="file://$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/myrule/MyRule.java" />
-    <entry file="file://$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/myrule/MyRuleConfig.java" />
-    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="54" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/ConsumerRibbon9002Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" selection-start-line="11" selection-end-line="18" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/cn/zsk/service/t.java" />
-    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/service/DeptService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-dept-8001/src/main/java/cn/zsk/provider8001/controller/DpetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9002/src/main/java/cn/zsk/ribbon9002/controller/Consumer_DeptController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/config/ConfigBean.java" />
-    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/entity/DeptEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client-8001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="64" selection-start-line="19" selection-start-column="4" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/config/MybatisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -915,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/service/impl/DeptServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -947,30 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hystrix-client-8011/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/controller/DpetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="50" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hystrix-client-8011/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="71" selection-start-line="20" selection-start-column="4" selection-end-line="71" />
         </state>
       </provider>
     </entry>
@@ -1012,13 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1166,11 +1066,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/provider-dept-8001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="50" column="44" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/ConsumerRibbon9001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server-7001/src/main/java/cn/zsk/eurekaserver7001/EurekaServer7001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/config/MybatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/config/HystrixConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/controller/DpetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="34" column="59" lean-forward="true" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-client-8011/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/HystrixDashboard9005Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-client-8011/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="52" column="21" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-client-8011/src/main/java/cn/zsk/client8011/config/HystrixConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="237">
-            <caret line="655" column="62" selection-start-line="655" selection-start-column="62" selection-end-line="655" selection-end-column="62" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1563">
+            <caret line="815" column="3" selection-start-line="815" selection-start-column="3" selection-end-line="815" selection-end-column="3" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -1229,7 +1238,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>consumer-dept-8002</last-edited>
+          <last-edited>hystrix-dashboard-9005</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

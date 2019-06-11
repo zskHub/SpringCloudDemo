@@ -35,6 +35,8 @@ Simple study notes for springcloud
     --- eureka-client-8003 ：配合eureka-client-8001实现多个微服务的运行，可用于负载均衡的测试
     --- consumer-ribbon-9002 ：集成ribbon，实现自定义负载均衡算法
     --- consumer-feign-9003 : 集成了feign模块
+    --- consumer-feign-hystrix-9004 : 用于测试hystrix服务降级
+    --- hystrix-dashboard-9005 ： hystrix仪表盘监控
 
 ## 2 目录说明 ##
 - ***因为牵涉到消费者，服务者等相关内容，每次测试可能会牵涉多个模块，这里分组介绍***。
@@ -740,3 +742,80 @@ private DeptService deptService;
 3. 启动consumer-feign-hystrix-9004模块
 4. 打开浏览器，输入`localhost:9004/consumer/dept/list`,因为服务端手动制造了异常会造成连接超时，所以客户端会直接触发本地的fallback方法
 5. 如果将hystrix-client-8012模块停止了，再次刷新，客户端也会直接触发本地的fallback方法
+
+
+#### 2.6.3 hystrix-dashboard-9005 ####   
+##### a.说明 #####
+1. 该模块测试 hystrix 的仪表盘监控
+2. 同时对模块hystrix-client-8011做了一些修改 
+##### b.注意事项 #####
+##### c.实现方式 #####
+1. hystrix-dashboard-9005模块
+   1. pom文件
+   ```
+   <!--自定义的公共模块-->
+        <dependency>
+            <groupId>cn.zsk</groupId>
+            <artifactId>common-api</artifactId>
+            <version>${common-api.version}</version>
+        </dependency>
+
+        <!--hystrix-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
+        <!--hystrix dashboard-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+        </dependency>
+   ```
+   2. yml文件
+   ```
+    server:
+    port: 9005
+
+   ```
+   3. 主启动类
+   ```
+   @SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
+        DataSourceTransactionManagerAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class
+    })
+    @EnableHystrixDashboard
+   ```
+2. hystrix-client-8011模块
+   1. pom文件，需要增加一个jar包
+   ```
+    <!--actuator监控信息完善-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
+        </dependency>
+   ```
+   2. 要增加一个配置文件,(各个版本不一样，以前的版本不需要。。。)
+   ```
+   @Configuration
+    public class HystrixConfiguration {
+    @Bean
+    public ServletRegistrationBean getServlet() {
+        HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
+        ServletRegistrationBean registrationBean = new ServletRegistrationBean(streamServlet);
+        registrationBean.setLoadOnStartup(1);
+        registrationBean.addUrlMappings("/actuator/hystrix.stream");
+        registrationBean.setName("HystrixMetricsStreamServlet");
+        return registrationBean;
+        }
+    }
+
+   ```
+##### d.测试启动 #####
+1. 启动eureka-server-7001，eureka-server-7002，eureka-server-7003
+2. 启动hystrix-client-8011
+3. 启动hystrix-dashboard-9005模块
+4. 打开浏览器，输入`http://localhost:9005/hystrix/`，出现页面说明`Hystrix Dashboard`启动成功了
+<img src="2-image/dashboard-01.png" width = "800" height = "400" align=center />
+
