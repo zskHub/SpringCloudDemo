@@ -1,6 +1,6 @@
 package cn.zsk.client8011.service;
 
-import cn.zsk.entity.DeptEntity;
+import cn.zsk.api.entity.DeptEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

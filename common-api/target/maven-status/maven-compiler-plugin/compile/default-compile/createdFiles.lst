@@ -1,2 +1,4 @@
-cn\zsk\service\DeptService.class
-cn\zsk\entity\DeptEntity.class
+cn\zsk\api\service\DeptService.class
+cn\zsk\api\service\DeptServiceFallbackFactory$1.class
+cn\zsk\api\service\DeptServiceFallbackFactory.class
+cn\zsk\api\entity\DeptEntity.class

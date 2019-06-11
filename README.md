@@ -518,7 +518,7 @@ eureka:
         HibernateJpaAutoConfiguration.class
 })
 @EnableEurekaClient
-@EnableFeignClients(basePackages = {"cn.zsk"})
+@EnableFeignClients(basePackages = {"cn.zsk.api.service"})
 ```
 4. 修改common-api模块
    1. 修改pom
@@ -539,7 +539,7 @@ eureka:
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
    ```
-   2. 新建cn.zsk.service包，然后新建一个类：DeptService.java
+   2. 新建cn.zsk.api.service包，然后新建一个类：DeptService.java
    ```
    @FeignClient(value = "EUREKA-CLIENT-8001")
     public interface DeptService {
@@ -577,10 +577,13 @@ private DeptService deptService;
 ### 2.6 hystrix ###
 #### 2.6.1 hystrix-client-8011 ####   
 ##### a.说明 #####
-- 该模块实现了最简单的熔断例子，方便理解hystrix，但实际不会这样用。存在的问题：失败的处理逻辑和业务代码高度耦合；并且每个业务代码都需要一个相应的fallback方法，造成方法的膨胀。
-将会在下个模块处理这两个问题。  
+- 该模块实现了最简单的熔断例子。存在的问题：失败的处理逻辑和业务代码高度耦合；并且每个业务代码都需要一个相应的fallback方法，造成方法的膨胀。 
 ##### b.注意事项 #####
-
+1. 注意区分服务熔断和服务降级
+   1. *服务熔断是在服务端的*。当服务端某个方法出现问题时，直接返回一个缺省值。通过测试，使用服务熔断时，服务端某个方法出现异常可以返回缺省值，
+   但是如果整个服务直接宕机了，调用者还是会出现连接超时。（毕竟服务熔断在服务端，服务端都挂了，熔断也就没有生效了）
+   2. *服务降级是在客户端，和服务端没有关系*。当客户端访问服务时，但是出现了问题，比如服务器挂了导致的连接超时，服务器方法执行异常导致没有返回结果进而导致超时等
+   情况。客户端会直接调用*本地中fallback方法*，进行相应的处理。
 ##### c.实现方式 #####
 1. pom文件
 ```
@@ -650,4 +653,90 @@ private DeptService deptService;
 2. 启动hystrix-client-8011
 3. 启动consumer-feign-9003模块
 4. 打开浏览器，输入`localhost:9003/consumer/dept/list`,会返回当出现异常后自定义的信息
+5. 如果此时停止了hystrix-client-8011，然后再次刷新，就会出现错误页面。下面的服务降级将会解决这个问题。
 
+#### 2.6.2 hystrix-client-8012 ####   
+##### a.说明 #####
+1. 本模块测试服务降级
+   1. 由于服务降级只是客户端，和服务端无关。本模块将有关服务熔断的相关内容删除了(其实目前本模块和eureka-client-8001一样的，为了测试区分就拷贝了一份)。
+   2. 本次的测试牵涉到的模块有：hystrix-client-8012，common-api,consumer-feign-hystrix-9004
+##### b.注意事项 #####
+
+##### c.实现方式 #####
+1. common-api模块
+   1. 在包：`cn.zsk.api.service`增加新的类：`DeptServiceFallBackFactory.java`
+   ```
+   @Component
+    public class DeptServiceFallbackFactory implements FallbackFactory<DeptService> {
+    
+         @Override
+        public DeptService create(Throwable throwable) {
+            return new DeptService() {
+                @Override
+                public DeptEntity getByDeptId(long deptId) {
+                    DeptEntity deptEntity = new DeptEntity();
+                    deptEntity.setDeptNo(0L).setDeptName("异常了，服务降级返回的假的信息").setDbSource("hystrix");
+                    return deptEntity;
+                }
+    
+                @Override
+                public List<DeptEntity> list() {
+                    DeptEntity deptEntity = new DeptEntity();
+                    deptEntity.setDeptNo(0L).setDeptName("异常了，服务降级返回的假的信息").setDbSource("hystrix");
+                    List<DeptEntity> deptEntityList = new ArrayList<>();
+                    deptEntityList.add(deptEntity);
+                    return deptEntityList;
+                }
+    
+                @Override
+                public boolean add(DeptEntity deptEntity) {
+                    return false;
+                }
+            };
+        }
+    }
+   ```
+   2. 修改`DeptService`的注解
+   ```
+   @FeignClient(value = "EUREKA-CLIENT-8001",fallbackFactory = DeptServiceFallbackFactory.class)
+   ```
+2. consumer-feign-hystrix-9004模块，是拷贝的consumer-feign-9003模块，然后需要修改的地方
+   1. 主启动类
+   ```
+   @SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
+        DataSourceTransactionManagerAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class
+    })
+    @EnableEurekaClient
+    @EnableFeignClients(basePackages = {"cn.zsk.api.service"})
+    /*
+     * @SpringBootApplication注解只会扫描所在包以及子包，而这个东西在common-api模块，虽然通过jar包引进来了，
+     * 但是需要去扫描才能将带有@Component装填进来。同时注意，添加@ComponentScan后，原有的@SpringBootApplication注解带来
+     * 的扫描效果就会消失，所以将本模块的也重新扫描一下
+     *
+     * */
+    @ComponentScan(basePackages = {"cn.zsk.api.service","cn.zsk"})
+   ```
+   2. yml文件
+   ```
+   server:
+    port: 9004
+
+    #如果开启hystrix降级需要加上这个
+    feign:
+      hystrix:
+        enabled: true
+    
+    eureka:
+      client:
+        register-with-eureka: false
+        service-url:
+          defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+   ```
+##### d.测试启动 #####
+1. 启动eureka-server-7001，eureka-server-7002，eureka-server-7003
+2. 启动hystrix-client-8012
+3. 启动consumer-feign-hystrix-9004模块
+4. 打开浏览器，输入`localhost:9004/consumer/dept/list`,因为服务端手动制造了异常会造成连接超时，所以客户端会直接触发本地的fallback方法
+5. 如果将hystrix-client-8012模块停止了，再次刷新，客户端也会直接触发本地的fallback方法

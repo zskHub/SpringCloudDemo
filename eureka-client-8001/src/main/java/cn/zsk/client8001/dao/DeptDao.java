@@ -1,6 +1,6 @@
 package cn.zsk.client8001.dao;
 
-import cn.zsk.entity.DeptEntity;
+import cn.zsk.api.entity.DeptEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

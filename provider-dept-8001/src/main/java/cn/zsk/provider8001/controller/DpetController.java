@@ -1,8 +1,7 @@
 package cn.zsk.provider8001.controller;
 
-import cn.zsk.entity.DeptEntity;
+import cn.zsk.api.entity.DeptEntity;
 import cn.zsk.provider8001.service.DeptService;
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

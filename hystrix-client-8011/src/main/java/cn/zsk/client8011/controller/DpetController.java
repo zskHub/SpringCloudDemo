@@ -1,11 +1,9 @@
 package cn.zsk.client8011.controller;
 
 import cn.zsk.client8011.service.DeptService;
-import cn.zsk.entity.DeptEntity;
+import cn.zsk.api.entity.DeptEntity;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;

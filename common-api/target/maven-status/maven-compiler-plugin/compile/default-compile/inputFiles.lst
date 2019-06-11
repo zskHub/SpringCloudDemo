@@ -1,2 +1,3 @@
-E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java\cn\zsk\entity\DeptEntity.java
-E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java\cn\zsk\service\DeptService.java
+E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java\cn\zsk\api\entity\DeptEntity.java
+E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java\cn\zsk\api\service\DeptService.java
+E:\workspace\IdeaProjects\SpringCloudDemo\common-api\src\main\java\cn\zsk\api\service\DeptServiceFallbackFactory.java

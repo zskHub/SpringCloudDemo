@@ -2,7 +2,7 @@ package cn.zsk.client8001.service.impl;
 
 import cn.zsk.client8001.dao.DeptDao;
 import cn.zsk.client8001.service.DeptService;
-import cn.zsk.entity.DeptEntity;
+import cn.zsk.api.entity.DeptEntity;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

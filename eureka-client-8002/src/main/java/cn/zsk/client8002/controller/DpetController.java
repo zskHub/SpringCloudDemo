@@ -1,7 +1,7 @@
 package cn.zsk.client8002.controller;
 
 import cn.zsk.client8002.service.DeptService;
-import cn.zsk.entity.DeptEntity;
+import cn.zsk.api.entity.DeptEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

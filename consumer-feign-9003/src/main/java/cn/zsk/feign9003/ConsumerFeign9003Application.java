@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
         HibernateJpaAutoConfiguration.class
 })
 @EnableEurekaClient
-@EnableFeignClients(basePackages = {"cn.zsk"})
+@EnableFeignClients(basePackages = {"cn.zsk.api.service"})
 public class ConsumerFeign9003Application {
 
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package cn.zsk.client8003.service.impl;
 
 import cn.zsk.client8003.dao.DeptDao;
 import cn.zsk.client8003.service.DeptService;
-import cn.zsk.entity.DeptEntity;
+import cn.zsk.api.entity.DeptEntity;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package cn.zsk.feign9003.controller;
 
-import cn.zsk.entity.DeptEntity;
-import cn.zsk.service.DeptService;
+import cn.zsk.api.entity.DeptEntity;
+import cn.zsk.api.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,9 +21,6 @@ public class Consumer_DeptController {
 
     @RequestMapping("save")
     public boolean save(DeptEntity deptEntity){
-        /*
-        * 三个参数：(url,requestMap,Responson.class)请求地址，请求参数，http响应转换换成对象类型
-        * */
         return deptService.add(deptEntity);
     }
 
