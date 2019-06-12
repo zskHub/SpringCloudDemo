@@ -7,12 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zuul-gateway-9527" />
+        <module name="config-eureka-server-7001" />
         <module name="consumer-feign-9003" />
         <module name="hystrix-client-8012" />
         <module name="hystrix-client-8011" />
+        <module name="config-server-3344" />
         <module name="provider-dept-8001" />
         <module name="consumer-ribbon-9002" />
         <module name="consumer-ribbon-9001" />
+        <module name="config-client-3355" />
         <module name="hystrix-dashboard-9005" />
         <module name="eureka-server-7001" />
         <module name="eureka-client-8003" />
@@ -20,6 +23,7 @@
         <module name="eureka-client-8001" />
         <module name="eureka-server-7003" />
         <module name="consumer-dept-8002" />
+        <module name="config-eureka-client-8001" />
         <module name="consumer-feign-hystrix-9004" />
         <module name="eureka-server-7002" />
         <module name="common-api" />
@@ -36,6 +40,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common-api" options="-parameters" />
+      <module name="config-client-3355" options="-parameters" />
+      <module name="config-eureka-client-8001" options="-parameters" />
+      <module name="config-eureka-server-7001" options="-parameters" />
+      <module name="config-server-3344" options="-parameters" />
       <module name="consumer-dept-8002" options="-parameters" />
       <module name="consumer-feign-9003" options="-parameters" />
       <module name="consumer-feign-hystrix-9004" options="-parameters" />

@@ -845,6 +845,7 @@ private DeptService deptService;
 #### 2.3.1 zuul-gateway-9527 ####   
 ##### a.说明 #####
 - 演示zuul基本的地址映射，使用的模块：zuul-gateway-9527
+- 修改一下hosts，增加：`127.0.0.1 myzuul.com`
 ##### b.注意事项 #####
  
 ##### c.实现方式 #####
@@ -906,3 +907,339 @@ info:
 3. 启动zuui-gateway-9527模块
 4. 打开浏览器，输入`http://myzuul.com:9527/zsk/mydept/dept/getByDeptId/1`，可以正常查询出结果
 
+### 2.8 spring cloud config ###
+- 总体介绍
+   1. spring cloud config分为服务端和客户端。服务端用于连接github，可以注册进服务中心进行管理。
+   客户端其实就是需要配置文件的各种提供者或者消费者等都是config的客户端。
+- 准备工作：
+   1. 修改hosts文件添加：`127.0.0.1 config3344.com`
+   2. 本次使用github演示，所以先在github上新建一个仓库，用来存放配置文件。
+#### 2.8.1 config-server-3344模块 ####   
+##### a.说明 #####
+- 该模块是config的服务端，作用是用来连接github的。
+##### b.注意事项 #####
+
+##### c.实现方式 #####
+1. pom文件
+```
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-config-server</artifactId>
+    </dependency>
+```
+2. yml文件
+```
+server:
+  port: 3344
+spring:
+  application:
+    name: config-3344
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:springcloudgroup/springcloudconfig.git
+
+```
+3. 主启动类
+```
+@SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
+        DataSourceTransactionManagerAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class
+})
+@EnableConfigServer
+```
+##### d.测试启动 #####
+1. 新建一个application.yml文件放到github上
+2. 启动config-server-3355模块
+3. 浏览器输入`http://config3344.com:3344/application-dev.yml`
+4. 结果：
+<img src="2-image/config-01.png" width = "600" height = "250" align=center />
+
+5. 其他的访问方式，例如：`http://config3344.com:3344/application/dev/master`(可以自己尝试一下，返回的类型不一样)：
+```
+    /{application}/{profile}[/{label}]
+    /{application}-{profile}.yml
+    /{label}/{application}-{profile}.yml
+    /{application}-{profile}.properties
+    /{label}/{application}-{profile}.properties
+```
+
+#### 2.8.2 config-client-3355 ####   
+##### a.说明 #####
+- 简单模拟客户端从服务端获取配置文件
+- 修改一下hosts，增加：`127.0.0.1 configclient.com`
+##### b.注意事项 #####
+  
+##### c.实现方式 #####
+1. pom文件
+```
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
+```
+2. 配置文件：此时的配置文件有两个，bootstrap.yml、application.yml
+   1. bootstrap.yml:启动优先级最高，比application要高（因为之所以使用springcloudconfig就是要统一配置application，所以此时项目中的application是缺少参数的，需要从github获取）
+   ```
+   spring:
+    cloud:
+        config:
+          name: application  # 注意没有yml后缀
+          profile: dev
+          label: master
+          uri: http://config3344.com:3344/
+   ```
+   2. application.yml，这里就说明了一个名字(可以删除这个yml文件的)，（如果这里的名字和github的不一致，最终是以github为主）
+   ```
+   spring:
+       application:
+            name: config-client-3355
+   ```
+   3. 主启动类没有什么特殊的。
+   ```
+   @SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
+        DataSourceTransactionManagerAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class
+    })
+   ```
+##### d.测试启动 #####
+***这里有个需要注意的问题，虽然模块的名字写的端口号是3355，但是由于本地application中没有port的设置，所以最终的port是以github上的配置文件为主的***
+1. 使用的是github的application.yml文件，并且在config-client-3355模块中写了一个测试的controller方法，用于打印参数。
+2. 启动config-server-3344模块
+3. 启动config-client-3355模块
+4. 浏览器输入：`http://configclient.com:3355/config`
+5. 结果
+<img src="2-image/config-02.png" width = "600" height = "100" align=center />
+
+##### f.实际应用情况测试 #####
+1. 新建两个模块：config-eureka-server-7001和config-eureka-client-8001分别拷贝eureka-server-7001模块和eureka-client-8001模块
+2. 需要修改的内容
+   1. config-eureka-server-7001和config-eureka-client-8001模块的pom文件都要**一定一定一定**加上
+   ```
+       <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+   ```
+   2. 删除原来的application.yml文件，config-eureka-server-7001的application.yml
+   ```
+   spring:
+    application:
+      name: config-eureka-7001
+   ```
+   config-eureka-client-8001的application.yml文件：
+   ```
+   spring:
+    application:
+      name: config-eureka-client-8001
+   ```
+   3. config-eureka-server-7001的bootstrap.yml
+   ```
+   spring:
+      cloud:
+        config:
+          name: config-eureka-server-7001  # 注意没有yml后缀
+          profile: dev
+          label: master
+          uri: http://config3344.com:3344
+   ```
+   4. config-eureka-client-8001的bootstrap.yml
+   ```
+   spring:
+      cloud:
+        config:
+          name: config-eureka-client-8001  # 注意没有yml后缀
+          profile: test
+          label: master
+          uri: http://config3344.com:3344/
+   ```
+3. 测试
+   （*首先分别为config-eureka-server-7001和config-eureka-client-8001创建两个配置文件上传到github上*）
+   1. 启动config-server-3344
+   2. 启动config-eureka-server-7001
+   3. 启动config-eureka-client-8001
+   4. 然后访问`http://localhost:8001/dept/list`,能够正确加载数据。
+   5. 切换config-eureka-client-8001的bootstrap.yml中的`profile: test`，可以实现数据库的切换。说明github的配置生效了（如果github的配置不生效，模块也启动不起来）
+
+4. 附上github上的配置文件信息
+- application.yml:
+```
+spring:
+ profiles:
+   active: dev
+--- 
+server:
+  port: 3355
+spring:
+ profiles: dev
+ application:
+  name: dev-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-dev.com:7001/eureka/
+---
+server:
+  port: 3356
+spring:
+ profiles: test
+ application:
+  name: test-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-test.com:7001/eureka/
+```
+
+- config-eureka-client-8001.yml
+```
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+   port: 8001
+spring:
+  profiles: dev
+  application:
+    name: config-eureka-client-8001
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+      url: jdbc:mysql://localhost:3306/springclouddemo?useSSL=true&verifyServerCertificate=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: admin
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        #login-username: admin
+        #login-password: admin
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: false
+        wall:
+          config:
+            multi-statement-allow: true
+eureka:
+  client:
+    service-url:
+       defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: config-eureka-8001 #可以给本服务起别名
+    prefer-ip-address: true #访问路径可以显示ip地址
+
+info:
+  app.name: SpringCloudDemo~~~config-eureka-client-8001
+  company.name: zsk
+  bulid.artifactId: $project.artifactId$
+  bulid.version: $project.version$
+  
+---
+server:
+   port: 8001
+spring:
+  profiles: test
+  application:
+    name: config-eureka-client-8001
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+      url: jdbc:mysql://localhost:3306/springclouddemo2?useSSL=true&verifyServerCertificate=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: admin
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        #login-username: admin
+        #login-password: admin
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: false
+        wall:
+          config:
+            multi-statement-allow: true
+eureka:
+  client:
+    service-url:
+       defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: config-eureka-8001 #可以给本服务起别名
+    prefer-ip-address: true #访问路径可以显示ip地址
+
+info:
+  app.name: SpringCloudDemo~~~config-eureka-client-8001
+  company.name: zsk
+  bulid.artifactId: $project.artifactId$
+  bulid.version: $project.version$
+```
+- config-eureka-server-7001.yml
+```
+spring:
+  profiles: 
+    active: dev
+---
+server:
+  port: 7001
+spring:
+  profiles: dev
+  application:
+    name: config-eureka-server-7001
+eureka:
+  instance:
+    hostname: eureka7001.com #erueka服务端的实例名称
+  client:
+    register-with-eureka: false #false表示不向注册中心注册自己
+    fetch-registry: false #false表示自己端就是注册中心，我的职责是维护服务实例，不需要去检索服务
+    service-url:
+      defaultZone: http://erueka7001:7001/eureka/
+
+---
+server:
+  port: 7001
+spring:
+  profiles: test
+  application:
+    name: config-eureka-server-7001
+eureka:
+  instance:
+    hostname: eureka7001.com #erueka服务端的实例名称
+  client:
+    register-with-eureka: false #false表示不向注册中心注册自己
+    fetch-registry: false #false表示自己端就是注册中心，我的职责是维护服务实例，不需要去检索服务
+    service-url:
+      defaultZone: http://erueka7001:7001/eureka/
+```

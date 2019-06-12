@@ -26,6 +26,11 @@
         <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml" />
         <option value="$PROJECT_DIR$/zuul-gateway-9527/pom.xml" />
+        <option value="$PROJECT_DIR$/config-3344/pom.xml" />
+        <option value="$PROJECT_DIR$/config-client-3355/pom.xml" />
+        <option value="$PROJECT_DIR$/config-eureka-server-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server-3344/pom.xml" />
+        <option value="$PROJECT_DIR$/config-eureka-client-8001/pom.xml" />
       </list>
     </option>
   </component>
