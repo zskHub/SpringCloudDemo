@@ -9,11 +9,11 @@
         <module name="consumer-feign-9003" />
         <module name="hystrix-client-8012" />
         <module name="hystrix-client-8011" />
-        <module name="common-api" />
         <module name="provider-dept-8001" />
         <module name="consumer-ribbon-9002" />
         <module name="consumer-ribbon-9001" />
         <module name="hystrix-dashboard-9005" />
+        <module name="eureka-server-7001" />
         <module name="eureka-client-8003" />
         <module name="eureka-client-8002" />
         <module name="eureka-client-8001" />
@@ -21,7 +21,7 @@
         <module name="consumer-dept-8002" />
         <module name="consumer-feign-hystrix-9004" />
         <module name="eureka-server-7002" />
-        <module name="eureka-server-7001" />
+        <module name="common-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">

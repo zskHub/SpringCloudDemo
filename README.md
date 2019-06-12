@@ -796,7 +796,7 @@ private DeptService deptService;
             <artifactId>spring-boot-actuator</artifactId>
         </dependency>
    ```
-   2. 要增加一个配置文件,(各个版本不一样，以前的版本不需要。。。)
+   2. 要增加一个配置文件(各个版本不一样，以前的版本不需要。。。)
    ```
    @Configuration
     public class HystrixConfiguration {
@@ -818,4 +818,25 @@ private DeptService deptService;
 3. 启动hystrix-dashboard-9005模块
 4. 打开浏览器，输入`http://localhost:9005/hystrix/`，出现页面说明`Hystrix Dashboard`启动成功了
 <img src="2-image/dashboard-01.png" width = "800" height = "400" align=center />
+
+##### e.dashboard的使用 #####
+1. 主页面如图
+<img src="2-image/dashboard-02.png" width = "1000" height = "600" align=center />
+
+2. 单个微服务查看（直接在浏览器选项卡打开：`http://localhost:8011/actuator/hystrix.stream`，这种情况没有图形化界面的）：
+<img src="2-image/dashboard-03.png" width = "800" height = "400" align=center />
+
+*注意：此时可以看到一直都是ping，然后返回的也是空，此时如果执行第三步，页面会一直展示loading。解决办法：访问一下其中一个方法就行了（原因不明），并且目前
+来说，页面也只展示最后一次访问的方法的负载情况。*
+- 正常的情况：
+<img src="2-image/dashboard-04.png" width = "1200" height = "800" align=center />
+
+3. 使用图形化页面查看
+<img src="2-image/dashboard-05.png" width = "800" height = "300" align=center />
+
+4. 结果：
+<img src="2-image/dashboard-06.png" width = "1000" height = "500" align=center />
+
+5. 说明
+<img src="2-image/dashboard-07.png" width = "1000" height = "500" align=center />
 

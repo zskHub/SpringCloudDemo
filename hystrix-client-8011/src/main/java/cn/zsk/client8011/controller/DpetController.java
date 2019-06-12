@@ -25,13 +25,17 @@ public class DpetController {
         return deptService.save(deptEntity);
     }
     @GetMapping("/getByDeptId/{deptId}")
+    @HystrixCommand(fallbackMethod = "processHystrix_get")
     public DeptEntity getByDeptId(@PathVariable("deptId") Long deptId){
-
-        return deptService.getById(deptId);
+        DeptEntity deptEntity = deptService.getById(deptId);
+        if(null == deptEntity){
+            throw  new RuntimeException("***********模拟异常了************");
+        }
+        return deptEntity;
     }
 
     @GetMapping("/list")
-    //一旦调用服务失败，并抛出错误信息，会自动调动processHystrix_GetList方法
+    //一旦调用服务失败，并抛出错误信息，会自动调动processHystrix_List方法
     @HystrixCommand(fallbackMethod = "processHystrix_List")
     public List<DeptEntity> list(){
         if(true){
@@ -47,4 +51,10 @@ public class DpetController {
         deptEntityList.add(deptEntity);
         return deptEntityList;
    }
+
+    public DeptEntity processHystrix_get(@PathVariable("deptId") Long deptId){
+        DeptEntity deptEntity = new DeptEntity();
+        deptEntity.setDeptNo(deptId).setDeptName("异常了，这个是熔断器返回的假的信息").setDbSource("hystrix");
+        return deptEntity;
+    }
 }
