@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="zuul-gateway-9527" />
         <module name="consumer-feign-9003" />
         <module name="hystrix-client-8012" />
         <module name="hystrix-client-8011" />
@@ -55,6 +56,7 @@
       <module name="provider-dept-8001" options="-parameters" />
       <module name="ribbon-8002" options="-parameters" />
       <module name="ribbon-test" options="-parameters" />
+      <module name="zuul-gateway-9527" options="-parameters" />
     </option>
   </component>
 </project>

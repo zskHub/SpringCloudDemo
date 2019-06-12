@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/consumer-feign-hystrix-9004/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-gateway-9527/pom.xml" />
       </list>
     </option>
   </component>

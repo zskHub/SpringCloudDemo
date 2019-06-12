@@ -1,0 +1,28 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #集群服务注册中心
+  instance:
+    instance-id: zuul-gateway-9527 #可以给本服务起别名
+    prefer-ip-address: true #访问路径可以显示ip地址
+
+zuul:
+  prefix: /zsk     #访问前缀
+  ignored-services: "*"  #忽略原真实服务名
+  routes:
+    mydept:
+      path: /mydept/**
+      serviceId: EUREKA-CLIENT-8001
+
+info:
+  app.name: zuul-gateway-9527
+  company.name: zsk
+  bulid.artifactId: $project.artifactId$
+  bulid.version: $project.version$

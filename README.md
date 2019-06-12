@@ -37,6 +37,7 @@ Simple study notes for springcloud
     --- consumer-feign-9003 : 集成了feign模块
     --- consumer-feign-hystrix-9004 : 用于测试hystrix服务降级
     --- hystrix-dashboard-9005 ： hystrix仪表盘监控
+    --- zuul-gateway-9527 : zuul简单的地址映射
 
 ## 2 目录说明 ##
 - ***因为牵涉到消费者，服务者等相关内容，每次测试可能会牵涉多个模块，这里分组介绍***。
@@ -839,4 +840,69 @@ private DeptService deptService;
 
 5. 说明
 <img src="2-image/dashboard-07.png" width = "1000" height = "500" align=center />
+
+### 2.7 zuul ###
+#### 2.3.1 zuul-gateway-9527 ####   
+##### a.说明 #####
+- 演示zuul基本的地址映射，使用的模块：zuul-gateway-9527
+##### b.注意事项 #####
+ 
+##### c.实现方式 #####
+1. pom文件
+```
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+    </dependency>
+```
+2. yml文件
+```
+server:
+  port: 9527
+
+spring:
+  application:
+    name: zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #集群服务注册中心
+  instance:
+    instance-id: zuul-gateway-9527 #可以给本服务起别名
+    prefer-ip-address: true #访问路径可以显示ip地址
+
+zuul:
+  prefix: /zsk     #访问前缀
+  ignored-services: "*"  #忽略原真实服务名
+  routes:
+    mydept:
+      path: /mydept/**
+      serviceId: EUREKA-CLIENT-8001
+
+info:
+  app.name: zuul-gateway-9527
+  company.name: zsk
+  bulid.artifactId: $project.artifactId$
+  bulid.version: $project.version$
+```
+3. 主启动类
+```
+@SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
+        DataSourceTransactionManagerAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class
+})
+@EnableZuulProxy
+```
+##### d.测试启动 #####
+1. 启动eureka-server-7001，eureka-server-7002，eureka-server-7003
+2. 启动hystrix-client-8011
+3. 启动zuui-gateway-9527模块
+4. 打开浏览器，输入`http://myzuul.com:9527/zsk/mydept/dept/getByDeptId/1`，可以正常查询出结果
 
