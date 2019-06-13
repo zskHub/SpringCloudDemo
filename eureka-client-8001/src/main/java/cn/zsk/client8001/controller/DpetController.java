@@ -33,7 +33,14 @@ public class DpetController {
     }
 
     @GetMapping("/list")
-    public List<DeptEntity> list(){
+    public List<DeptEntity> list() {
+//        try {
+//            System.out.println("*************开始模拟超时***********");
+//            Thread.sleep(3000);
+//            System.out.println("*************结束模拟超时***********");
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
 
         return deptService.list();
     }

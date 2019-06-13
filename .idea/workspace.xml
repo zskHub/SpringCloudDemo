@@ -1,59 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="1.增加zuul模块">
-      <change afterPath="$PROJECT_DIR$/2-image/config-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-image/config-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/src/main/java/cn/zsk/config3355/ConfigClient3355Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/src/main/java/cn/zsk/config3355/rest/configClientRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-3355/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/src/main/java/cn/zsk/client8001/ConfigEurekaClient8001Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/src/main/java/cn/zsk/client8001/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/src/main/java/cn/zsk/client8001/dao/DeptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/src/main/java/cn/zsk/client8001/service/DeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/src/main/java/cn/zsk/client8001/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-client-8001/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/src/main/java/cn/zsk/server7001/ConfigEurekaServer7001Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-eureka-server-7001/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/src/main/java/cn/zsk/config3344/ConfigServer3344Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-3344/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,13 +48,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="254">
-                <caret line="1063" column="48" selection-start-line="1063" selection-start-column="48" selection-end-line="1063" selection-end-column="48" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="17">
+                <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -111,55 +64,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config-eureka-client-8001/src/main/resources/bootstrap.yml">
+        <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="279">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="42" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config-eureka-server-7001/src/main/resources/bootstrap.yml">
+        <entry file="file://$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config-eureka-client-8001/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config-eureka-server-7001/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config-server-3344/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="24" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config-eureka-client-8001/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="43" selection-start-line="43" selection-end-line="46" selection-end-column="21" />
+            <state relative-caret-position="136">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -193,9 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/service/impl/DeptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/hystrix-client-8012/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/HystrixClient8012Application.java" />
         <option value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/service/DpetServiceFallbackFactory.java" />
         <option value="$PROJECT_DIR$/hystrix-client-8012/src/main/java/cn/zsk/hystrix8012/controller/DpetController.java" />
         <option value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/service/DeptServiceFallbackFactory.java" />
@@ -205,10 +119,8 @@
         <option value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/service/DeptServiceFallbackFactory.java" />
         <option value="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/java/cn/zsk/consume9004/controller/Consumer_DeptController.java" />
         <option value="$PROJECT_DIR$/consumer-feign-hystrix-9004/pom.xml" />
-        <option value="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/java/cn/zsk/consume9004/ConsumerFeignHystrix9004Application.java" />
         <option value="$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/service/DeptService.java" />
-        <option value="$PROJECT_DIR$/consumer-feign-9003/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/ConsumerFeign9003Application.java" />
         <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/HystrixDashboardApplication.java" />
@@ -243,6 +155,11 @@
         <option value="$PROJECT_DIR$/config-server-3344/pom.xml" />
         <option value="$PROJECT_DIR$/config-eureka-client-8001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/config-eureka-client-8001/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/consumer-feign-9003/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/eureka-client-8001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/consumer-ribbon-9001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java" />
+        <option value="$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -271,10 +188,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="640" />
-    <option name="y" value="89" />
-    <option name="width" value="1575" />
-    <option name="height" value="982" />
+    <option name="x" value="52" />
+    <option name="y" value="56" />
+    <option name="width" value="1452" />
+    <option name="height" value="981" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -282,8 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -291,78 +206,12 @@
               <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-client-8001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-client-8001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-client-8001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-client-8001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-client-8001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-server-7001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-server-7001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-server-7001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-server-7001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config-eureka-server-7001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,10 +232,12 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\2-image" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\common-api" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\1-db" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\config-eureka-server-7001\src\main\resources" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\config-eureka-client-8001\src\main\resources" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\config-eureka-client-8001\src\main\java\cn\zsk\client8001" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\hystrix-dashboard-9005\src\main\java\cn\zsk\dashboard" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\consumer-feign-hystrix-9004\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.zsk.client8011.config" />
@@ -394,12 +245,10 @@
       <recent name="config" />
       <recent name="cn.zsk.provider8001.config" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\config-eureka-server-7001\src\main\resources" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\config-eureka-client-8001\src\main\resources" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\config-eureka-client-8001\src\main\java\cn\zsk\client8001" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\hystrix-dashboard-9005\src\main\java\cn\zsk\dashboard" />
-      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\consumer-feign-hystrix-9004\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\2-image" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\common-api" />
+      <recent name="E:\workspace\IdeaProjects\SpringCloudDemo\1-db" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -414,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigClient3355Application">
+  <component name="RunManager" selected="Spring Boot.ConsumerFeignHystrix9004Application">
     <configuration name="ConfigClient3355Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="config-client-3355" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.zsk.config3355.ConfigClient3355Application" />
@@ -587,18 +436,18 @@
       <item itemvalue="Spring Boot.HystrixClient8011Application" />
       <item itemvalue="Spring Boot.HystrixClient8012Application" />
       <item itemvalue="Spring Boot.ConsumerFeignHystrix9004Application" />
-      <item itemvalue="Spring Boot.EurekaServer7001Application" />
-      <item itemvalue="Spring Boot.HystrixDashboard9005Application" />
       <item itemvalue="Spring Boot.ZuulGateway9527Application" />
       <item itemvalue="Spring Boot.ConfigClient3355Application" />
-      <item itemvalue="Spring Boot.ConfigServer3344Application" />
       <item itemvalue="Spring Boot.ConfigEurekaServer7001Application" />
       <item itemvalue="Spring Boot.ConfigEurekaClient8001Application" />
+      <item itemvalue="Spring Boot.EurekaServer7001Application" />
+      <item itemvalue="Spring Boot.HystrixDashboard9005Application" />
+      <item itemvalue="Spring Boot.ConfigServer3344Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConfigServer3344Application" />
         <item itemvalue="Spring Boot.EurekaServer7001Application" />
+        <item itemvalue="Spring Boot.ConfigServer3344Application" />
         <item itemvalue="Spring Boot.HystrixDashboard9005Application" />
       </list>
     </recent_temporary>
@@ -626,7 +475,9 @@
       <workItem from="1559896097347" duration="704000" />
       <workItem from="1560214183143" duration="23913000" />
       <workItem from="1560244715329" duration="7530000" />
-      <workItem from="1560300694783" duration="31208000" />
+      <workItem from="1560300694783" duration="31900000" />
+      <workItem from="1560386767917" duration="196000" />
+      <workItem from="1560387032824" duration="7632000" />
     </task>
     <task id="LOCAL-00001" summary="first commit&#10;Framework to build system">
       <created>1558927930801</created>
@@ -747,14 +598,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560318920546</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1.增加config模块">
+      <created>1560339552706</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1560339552706</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147014000" />
+    <option name="totallyTimeSpent" value="155534000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="640" y="89" width="1575" height="982" extended-state="0" />
+    <frame x="52" y="56" width="1452" height="981" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -764,10 +622,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.29372936" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.32614943" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" visible="true" weight="0.33008525" />
+      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995128" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -856,7 +714,8 @@
     <MESSAGE value="1.增加hystrix的仪表盘监控" />
     <MESSAGE value="1.更新README.md" />
     <MESSAGE value="1.增加zuul模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.增加zuul模块" />
+    <MESSAGE value="1.增加config模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.增加config模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -871,41 +730,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/java/cn/zsk/consume9004/ConsumerFeignHystrix9004Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-api/src/main/java/cn/zsk/api/service/DeptServiceFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-dept-8001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/config/MybatisConfig.java" />
-    <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/src/main/java/cn/zsk/dashboard/config/HystrixConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/hystrix-client-8011/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hystrix-dashboard-9005/mvnw.cmd">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -992,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/ConsumerRibbon9001Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1030,13 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1212,11 +1022,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/ConsumerRibbon9001Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/java/cn/zsk/ribbon9001/config/ConfigBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-feign-9003/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/controller/Consumer_DeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-feign-9003/src/main/java/cn/zsk/feign9003/ConsumerFeign9003Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-ribbon-9001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/java/cn/zsk/consume9004/ConsumerFeignHystrix9004Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-8001/src/main/java/cn/zsk/client8001/controller/DpetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-feign-hystrix-9004/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="254">
-            <caret line="1063" column="48" selection-start-line="1063" selection-start-column="48" selection-end-line="1063" selection-end-column="48" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

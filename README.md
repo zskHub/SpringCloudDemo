@@ -1,5 +1,6 @@
 # SpringCloudDemo #
-Simple study notes for springcloud  
+- springcloud入门级配置的介绍
+
 - 说明方式，（以eureka为例）：  
      2.3 eureka（主要的技术）    
         模块说明：XXXXXX。（简单介绍使用哪些模块）  
@@ -576,6 +577,61 @@ private DeptService deptService;
 2. 启动eureka-client-8001，eureka-client-8002，eureka-client-8003
 3. 启动consumer-feign-9003模块
 4. 打开浏览器，输入`localhost:9003/consumer/dept/list`,多次刷新，可查看到返回的结果是不同数据库的内容。而且是轮询方式的。
+
+##### f.feign其他配置和说明 #####
+1. 有关feign的超时
+   1. 使用Feign调用接口分两层，ribbon的调用和hystrix的调用，所以ribbon的超时时间和Hystrix的超时时间的结合就是Feign的超时时间。
+   2. 一般情况下 都是 ribbon 的超时时间（<）hystrix的超时时间（因为涉及到ribbon的重试机制） 
+      因为ribbon的重试机制和Feign的重试机制有冲突，所以源码中默认关闭Feign的重试机制
+   3. 此时以consumer-feign-hystrix-9004的yml模板进行修改，增加yml配置：
+   ```
+   ### Ribbon 配置
+    ribbon:
+      # 连接超时
+      ConnectTimeout: 2000
+      # 响应超时
+      ReadTimeout: 4000
+    
+    ### Hystrix 配置
+    hystrix:
+      # 这样将会自动配置一个 Hystrix 并发策略插件的 hook，这个 hook 会将 SecurityContext 从主线程传输到 Hystrix 的命令。
+      # 因为 Hystrix 不允许注册多个 Hystrix 策略，所以可以声明 HystrixConcurrencyStrategy
+      # 为一个 Spring bean 来实现扩展。Spring Cloud 会在 Spring 的上下文中查找你的实现，并将其包装在自己的插件中。
+      shareSecurityContext: true
+      command:
+        default:
+          circuitBreaker:
+            # 当在配置时间窗口内达到此数量的失败后，进行短路。默认20个
+            requestVolumeThreshold: 1
+            # 触发短路的时间值，当该值设为5000时，则当触发 circuit break 后的5000毫秒内都会拒绝request
+            # 也就是5000毫秒后才会关闭circuit。默认5000
+            sleepWindowInMilliseconds: 15000
+            # 强制打开熔断器，如果打开这个开关，那么拒绝所有request，默认false
+            forceOpen: false
+            # 强制关闭熔断器 如果这个开关打开，circuit将一直关闭且忽略，默认false
+            forceClosed: false
+          execution:
+            isolation:
+              thread:
+                # 熔断器超时时间，默认：1000/毫秒
+                timeoutInMilliseconds: 5000
+   ```
+   4. 测试的使用，启动eureka-server-7001、7002、7003，启动eureka-client-8001模块，同时将中的try{}catch(){}语句放开注释
+   ```
+    @GetMapping("/list")
+    public List<DeptEntity> list() {
+        try {
+            System.out.println("*************开始模拟超时***********");
+            Thread.sleep(3000);
+            System.out.println("*************结束模拟超时***********");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return deptService.list();
+    }
+   ```
+   然后，通过修改consumer-feign-hystrix-9004的yml模板中超时值进行测试，这里不再演示了。
 
 ### 2.6 hystrix ###
 #### 2.6.1 hystrix-client-8011 ####   
