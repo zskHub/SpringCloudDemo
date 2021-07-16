@@ -5,37 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f8bce37-ef64-47dd-810e-1b90d74126fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nacos-config-8004/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common-api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-client-3355/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-client-3355/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-eureka-client-8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-eureka-client-8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-eureka-server-7001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-eureka-server-7001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-3344/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-3344/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-dept-8002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-dept-8002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-feign-9003/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-feign-9003/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-feign-hystrix-9004/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-feign-hystrix-9004/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-ribbon-9001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-ribbon-9001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-ribbon-9002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-ribbon-9002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-8003/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-8003/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server-7001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server-7001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server-7002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server-7002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server-7003/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server-7003/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-client-8011/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-client-8011/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-client-8012/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-client-8012/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-dashboard-9005/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config-8004/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config-8004/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-dept-8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-dept-8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-gateway-9527/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-gateway-9527/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,6 +462,7 @@
       <workItem from="1626356519358" duration="950000" />
       <workItem from="1626359926649" duration="1429000" />
       <workItem from="1626400311481" duration="591000" />
+      <workItem from="1626451636249" duration="2054000" />
     </task>
     <task id="LOCAL-00001" summary="first commit&#10;Framework to build system">
       <created>1558927930801</created>
@@ -617,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560339552706</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat:规整pom文件&#10;feat:增加nacos配置中心demo">
+      <created>1626451809238</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1626451809238</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -714,7 +694,8 @@
     <MESSAGE value="1.更新README.md" />
     <MESSAGE value="1.增加zuul模块" />
     <MESSAGE value="1.增加config模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.增加config模块" />
+    <MESSAGE value="feat:规整pom文件&#10;feat:增加nacos配置中心demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:规整pom文件&#10;feat:增加nacos配置中心demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
