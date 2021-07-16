@@ -31,6 +31,8 @@
         <option value="$PROJECT_DIR$/config-eureka-server-7001/pom.xml" />
         <option value="$PROJECT_DIR$/config-server-3344/pom.xml" />
         <option value="$PROJECT_DIR$/config-eureka-client-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/naocs-config-8004/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-config-8004/pom.xml" />
       </list>
     </option>
   </component>
@@ -98,7 +100,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
